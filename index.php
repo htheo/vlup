@@ -66,10 +66,25 @@
 
 
 	    ?>
+	    <div class="sidebars">
+		    <div class="sidebar">
+				<h2>type d'articles</h2>
+				<ul>
+					<li>Web</li>
+					<li>Com Visuelle</li>
+					<li>Com Digitale</li>
+					<li>Design Interactif</li>
+					<li>3D</li>
+					<li>Jeu Vidéo</li>
+					<li>BAP</li>
+					<li>Pole Leonard De Vinci</li>
+				</ul>
+			</div>
+		</div>
 	    <div class="articles">
-	    	
+	    	<h2>Les derniers articles</h2>
 		    <div class="article">
-		    	<h2>Les derniers articles</h2>
+		    	
 		    		<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
 		    	<img src="images/octopulv.jpg">
 		    	
@@ -118,6 +133,7 @@
 		    	
 		    </div>
 		</div>
+
 
 		<footer>
 			
