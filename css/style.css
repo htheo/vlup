@@ -5,6 +5,9 @@ html, body {
 	font-family: Nunito;
 	
 }
+a {
+	text-decoration: none;
+}
 html {
 	background-color:rgba(200,200,200,0.2); 
 }
@@ -19,7 +22,7 @@ header {
 	background-size: cover;
 	text-align: center;
 }
-h1 {
+header h1 {
 	margin:0;
 	font-size: 3em;
 	padding-top: 5%;
@@ -31,6 +34,9 @@ header h2 {
 	margin:0;
 	color: rgba(255,255,255,0.9); 
 }
+/*  position de base  */
+
+/*          accueil          */
 .sidebars {
 	float: right;
 	margin-top: 2%;
@@ -66,4 +72,66 @@ header h2 {
 .article img {
 	width: 100%;
 
+}
+
+
+
+/*/                single article */
+.navbar {
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 8%;
+	background-color: rgb(255,255,255);
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 1%;
+}
+.navbar .center {
+	position: absolute;
+	right: 0;
+	height: 80%;
+	z-index: 1000;
+	text-align: center;
+	width: 100%;
+}
+.navbar img {
+	display: inline-block;
+}
+.navbar img {
+	height: 100%;
+}
+.singles{
+	width: 60%;
+	margin-left: 10%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.single img {
+	width: 100%;
+}
+.single {
+	width: 100%;
+	background-color: rgba(255,255,255,0.2);
+	margin: 0;
+	padding-top: 10%;
+}
+.single h1, .single p{
+	padding: 2%;
+}
+
+.single_plus {
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	padding: 2%;
+}
+.article_single {
+	width: 30%;
+	display: inline-block;
+	padding: 1%;
+}
+.article_single img {
+	width: 100%;
+}
+.3art {
+	text-align: center;
 }

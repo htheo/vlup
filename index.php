@@ -49,15 +49,35 @@
 			<h2>Le gorafi de l'IIM</h2>
 		</header>
 
-				<?php 
+				
+	    <div class="sidebars">
+		    <div class="sidebar">
+				<h2>type d'articles</h2>
+				<ul>
+					<li><a href="tag.php?type=Web">Web</a></li>
+					<li><a href="tag.php?type=CV">Com Visuelle</a></li>
+					<li><a href="tag.php?type=CD">Com Digitale</a></li>
+					<li><a href="tag.php?type=DI">Design Interactif</a></li>
+					<li><a href="tag.php?type=3D">3D</a></li>
+					<li><a href="tag.php?type=JV">Jeu Vidéo</a></li>
+					<li><a href="tag.php?type=BAP">BAP</a></li>
+					<li><a href="tag.php?type=Pole">Pole Leonard De Vinci</a></li>
+				</ul>
+			</div>
+		</div>
+	    <div class="articles">
+	    	<h2>Les derniers articles</h2>
+		    <?php 
 				include('config.php');
-				$reponse = $db->query('SELECT ID, img_nom, title, sous_title FROM vlup_articles2');
+				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 LIMIT 10');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
 					?>
 					<div class="article">
-						<a href="single.php?ID=<?php echo $ID; ?>"><img src="images/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?> par Théo Hinfray"></a>
-						
+						<h3><?php echo $result['title']; ?></h3>
+						<a href="single.php?ID=<?php echo $ID; ?>"><img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?>"></a>
+						<p><?php $description = $result['description'];
+						echo  substr($description , 0 , 100  )."..."; ?></p>
 					</div>
 					<?php
 				}
@@ -65,73 +85,9 @@
 			    $reponse->closeCursor();
 
 
-	    ?>
-	    <div class="sidebars">
-		    <div class="sidebar">
-				<h2>type d'articles</h2>
-				<ul>
-					<li>Web</li>
-					<li>Com Visuelle</li>
-					<li>Com Digitale</li>
-					<li>Design Interactif</li>
-					<li>3D</li>
-					<li>Jeu Vidéo</li>
-					<li>BAP</li>
-					<li>Pole Leonard De Vinci</li>
-				</ul>
-			</div>
-		</div>
-	    <div class="articles">
-	    	<h2>Les derniers articles</h2>
-		    <div class="article">
+	    	?>
 		    	
-		    		<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
-		    	<img src="images/octopulv.jpg">
-		    	
-		    	<p>lkjqdhsf ljsdqhf qsndf sqdkjf qsd;,fb qsd;fn bqs;d,nbf sq,;ndf bsdn,bf s,ndfb qdkjf hq;,snd s;jqhd qs;:f nqs;,f qdndf bqs;,d qs,;d bsq,d bsqfnb
-		    		 qkjsd hksqjd sqjdn q;s,db qs,hfb qsfb sdbf q;s,dfb qdsjkfb sd,nfb sdd </p>
-		    	
-		    </div>
-		    <div class="article">
-		    	<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
-		    	<img src="images/octopulv.jpg">
-		    	
-		    	<p>lkjqdhsf ljsdqhf qsndf sqdkjf qsd;,fb qsd;fn bqs;d,nbf sq,;ndf bsdn,bf s,ndfb qdkjf hq;,snd s;jqhd qs;:f nqs;,f qdndf bqs;,d qs,;d bsq,d bsqfnb
-		    		 qkjsd hksqjd sqjdn q;s,db qs,hfb qsfb sdbf q;s,dfb qdsjkfb sd,nfb sdd </p>
-		    	
-		    </div>
-		    <div class="article">
-		    	<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
-		    	<img src="images/octopulv.jpg">
-		    	
-		    	<p>lkjqdhsf ljsdqhf qsndf sqdkjf qsd;,fb qsd;fn bqs;d,nbf sq,;ndf bsdn,bf s,ndfb qdkjf hq;,snd s;jqhd qs;:f nqs;,f qdndf bqs;,d qs,;d bsq,d bsqfnb
-		    		 qkjsd hksqjd sqjdn q;s,db qs,hfb qsfb sdbf q;s,dfb qdsjkfb sd,nfb sdd </p>
-		    	
-		    </div>
-		    <div class="article">
-		    	<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
-		    	<img src="images/octopulv.jpg">
-		    	
-		    	<p>lkjqdhsf ljsdqhf qsndf sqdkjf qsd;,fb qsd;fn bqs;d,nbf sq,;ndf bsdn,bf s,ndfb qdkjf hq;,snd s;jqhd qs;:f nqs;,f qdndf bqs;,d qs,;d bsq,d bsqfnb
-		    		 qkjsd hksqjd sqjdn q;s,db qs,hfb qsfb sdbf q;s,dfb qdsjkfb sd,nfb sdd </p>
-		    	
-		    </div>
-		    <div class="article">
-		    	<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
-		    	<img src="images/octopulv.jpg">
-		    	
-		    	<p>lkjqdhsf ljsdqhf qsndf sqdkjf qsd;,fb qsd;fn bqs;d,nbf sq,;ndf bsdn,bf s,ndfb qdkjf hq;,snd s;jqhd qs;:f nqs;,f qdndf bqs;,d qs,;d bsq,d bsqfnb
-		    		 qkjsd hksqjd sqjdn q;s,db qs,hfb qsfb sdbf q;s,dfb qdsjkfb sd,nfb sdd </p>
-		    	
-		    </div>
-		    <div class="article">
-		    	<h3>Le BDE VoteBlanc fait la surprise face au BDE OCTOPULV</h3>
-		    	<img src="images/octopulv.jpg">
-		    	
-		    	<p>lkjqdhsf ljsdqhf qsndf sqdkjf qsd;,fb qsd;fn bqs;d,nbf sq,;ndf bsdn,bf s,ndfb qdkjf hq;,snd s;jqhd qs;:f nqs;,f qdndf bqs;,d qs,;d bsq,d bsqfnb
-		    		 qkjsd hksqjd sqjdn q;s,db qs,hfb qsfb sdbf q;s,dfb qdsjkfb sd,nfb sdd </p>
-		    	
-		    </div>
+		    
 		</div>
 
 

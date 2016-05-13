@@ -37,21 +37,9 @@
 				</form>
 	</div>
 </div>
-<footer>
-			<div class="icone_footer">
-				<a href="https://www.instagram.com/theohinfray/" target="_blank"><img src="css/image/insta.png" alt="lien vers ma page instagram"></a><br>
-				<a href="https://www.instagram.com/theohinfray/">Instagram</a>
-			</div>
-			<div class="icone_footer">
-				<a href="https://www.facebook.com/Cave-of-creativity-332932216890765/?fref=ts" target="_blank"><img src="css/image/facebook.png" alt="lien vers ma page facebook"></a><br>
-				<a href="https://www.facebook.com/Cave-of-creativity-332932216890765/?fref=ts">Facebook</a>
-
-			</div>
-			<div class="icone_footer">
-				<a href="https://fr.linkedin.com/in/theo-hinfray-8b845510a" target="_blank"><img src="css/image/linkedin.png" alt="lien vers ma page linkedin"></a><br>
-				<a href="https://fr.linkedin.com/in/theo-hinfray-8b845510a">Linkedin</a>
-			</div>
-		</footer>
+	<footer>
+		
+	</footer>
 
 </body>
 </html>

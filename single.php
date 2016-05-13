@@ -19,7 +19,7 @@
 	if (isset($_GET['ID'])){
 
 		$idencours = $_GET['ID'];
-		$sql="SELECT * FROM VLUP_articles WHERE ID = " . $idencours;
+		$sql="SELECT * FROM vlup_articles2 WHERE ID = " . $idencours;
 		$req = $db->prepare($sql);
 		$req->execute();
 		  
@@ -32,7 +32,7 @@
 		<meta name="DC.title" content="<?php echo $val['title']; ?>">
 		<meta name="DC.creator" content="Theo Hinfray">
 		<meta name="DC.subject" content="<?php echo $val['title']; ?> : Dessin et réalisation par Théo Hinfray etudiant à l'IIM" />
-		<meta name="DC.description" content="<?php echo $val['soustitle']; ?>, par Théo Hinfray etudiant à l'IIM" />
+		<meta name="DC.description" content="<?php echo $val['description']; ?>, par Théo Hinfray etudiant à l'IIM" />
 		<meta name="DC.publisher" content="Theo Hinfray">
 		<meta name="DC.format" content="website">
 		<meta name="DC.identifier" content="www.theo-hinfray.fr">
@@ -43,7 +43,7 @@
 
 
 		<!-- Referencement -->
-		<meta name="description" content="<?php echo $val['soustitle']; ?>, par Théo Hinfray etudiant à l'IIM">
+		<meta name="description" content="<?php echo $val['description']; ?>, par Théo Hinfray etudiant à l'IIM">
 		<meta name="keywords" content="<?php echo $val['title']; ?>, cave of creativity, <?php echo $val['type']; ?>, creation, theo, hinfray, IIM, etudiant">
 		<meta name="author" content="Theo Hinfray">
 		<meta name="robots" content="index"> 
@@ -57,44 +57,50 @@
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="www.theo-hinfray.fr">
 		<meta property="og:site_name" content="Mes réalisations - Theo Hinfray">
-		<meta property="og:description" content="<?php  echo $val['soustitle']; ?>, par Théo Hinfray etudiant à l'IIM ">
+		<meta property="og:description" content="<?php  echo $val['description']; ?>, par Théo Hinfray etudiant à l'IIM ">
 		<!-- END Open Graph-->
 	</head>
 	<body class="body">
 
 
-		<header>
+		<div class="navbar">
+			<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
+			<a class="center" href="index.php"><img src="images/logo_title.png" alt="logo retour bureau"></a>
 			
 
-		</header>
+		</div>
 		<div class="singles">
-			<div class="single single_img">
-				<img src="images/<?php echo $val['img_nom']; ?>" alt="<?php echo $val['title']; ?> par Théo Hinfray">
-			</div>
-			<div class="single single_describ">
-				<h2><?php echo $val['title']; ?></h2>
-				<p><?php echo $val['description']; ?> <br><br>par Théo Hinfray.</p>
+
+			<div class="single">
+				<h1><?php echo $val['title']; ?></h1>
+				<img src="avatars/<?php echo $val['img_nom']; ?>" alt="<?php echo $val['title']; ?> par Théo Hinfray">
+
+				
+
+				<p><?php echo $val['description']; ?> <br><br></p>
 			</div>
 		</div>
 
 		<div class="single_plus">
 			<h2>En voir plus...</h2>
-			<?php 
-			$reponse = $db->query('SELECT ID, img_nom, title, description FROM images ORDER BY RAND() LIMIT 5');
-			    while($result = $reponse->fetch()) {
-		 			$ID=$result['ID'];
-					?>
-					<div class="image_dessin">
-						<a href="single.php?ID=<?php echo $ID; ?>"><img src="images/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?> par Théo Hinfray"></a>
-						
-					</div>
-					<?php
-				}
-		 
-			    $reponse->closeCursor();
+			<div class="3art">
+				<?php 
+				$reponse = $db->query('SELECT ID, img_nom, title FROM vlup_articles2 ORDER BY RAND() LIMIT 3');
+				    while($result = $reponse->fetch()) {
+			 			$ID=$result['ID'];
+						?>
+						<div class="article_single">
+							<a href="single.php?ID=<?php echo $ID; ?>"><img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?> par Théo Hinfray"></a>
+							<h3><?php echo $result['title']; ?></h3>
+						</div>
+						<?php
+					}
+			 
+				    $reponse->closeCursor();
 
 
-	    ?>
+		    ?>
+			</div>
 
 		</div>
 			

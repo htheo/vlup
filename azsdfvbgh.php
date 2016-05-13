@@ -23,23 +23,9 @@ if (empty($_SESSION["ID"])||$_SESSION['ID']!=1) {
 </head>
 <body>
 	<header>
-			<a onclick="appear5('cave'); return false" href=""><img alt="logo Cave of Creativity" src="css/image/logo.png"></a>
-			<h1>Cave of Creativity</h1>
-			<ul>
-				<li><a href="" onclick="appear('accueil'); return false">Accueil</a></li>
-				<li><a href="realisation/">Réalisations</a>
-					<ul class="sous_menu">
-						<br><li><a href="dessin/">Dessins</a></li>
-						<li><a href="graphisme/">Graphisme</a></li>
-						<li><a href="CV/">Projets</a></li>
+		
 
-
-					</ul></li>
-				<li><a href="CV/">Mon CV</a></li>
-				
-			</ul>
-
-		</header>
+	</header>
 <div class="menu_real">
 	<div class="admin"><br><br><br>
 		<h1>Alors Quoi de neuf à mettre sur le site ? </h1>
@@ -58,8 +44,15 @@ if (empty($_SESSION["ID"])||$_SESSION['ID']!=1) {
 						
 						<p>Type : </p>
 						<SELECT name="type" size="1" required>
-							<OPTION value="dessin">Dessin</option>
-							<OPTION value="graphisme">Graphisme</option>
+							<OPTION value="Web">Web</option>
+							<OPTION value="CD">CD</option>
+							<OPTION value="CV">CV</option>
+							<OPTION value="DI">DI</option>
+							<OPTION value="BAP">BAP</option>
+							<OPTION value="3D">3D</option>
+							<OPTION value="JV">JV</option>
+							<OPTION value="Pole">Pole</option>
+
 							
 
 						</SELECT><br>
