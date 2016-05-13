@@ -3,7 +3,10 @@ html, body {
 	width: 100%;
 	height:100%;
 	font-family: Nunito;
-	background-color: rgba(200,200,200,0.1);
+	
+}
+html {
+	background-color:rgba(0,0,0,0.1); 
 }
 
 header {
@@ -29,19 +32,22 @@ header h2 {
 	color: rgba(255,255,255,0.9); 
 }
 .articles {
-	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-left: 10%;
+	
 	color: black;
-	padding-top: 2%;
+	margin-top: 2%;
 	padding-bottom: 2%;
 }
 .articles h2 {
 	text-align: center;
 }
 .article{
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	margin-left: 10%;
+	padding: 1%;
+	background-color: white;
+	margin-top: 5%;
 }
 .article img {
 	width: 100%;
