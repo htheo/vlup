@@ -37,6 +37,9 @@ header h2 {
 /*  position de base  */
 
 /*          accueil          */
+.headernav {
+	padding-top: 15%;
+}
 .sidebars {
 	float: right;
 	margin-top: 2%;
@@ -135,3 +138,6 @@ header h2 {
 .3art {
 	text-align: center;
 }
+
+
+/*   page erreur   */

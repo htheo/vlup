@@ -23,9 +23,14 @@
 		<!-- END Open Graph-->
 	</head>
 	<body>
-		<header>
-			<h1>VLUP</h1>
-			<h2>Les articles de l'IIM #<?php echo $tag; ?></h2>
+		<div class="navbar">
+			<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
+			<a class="center" href="index.php"><img src="images/logo_title.png" alt="logo retour bureau"></a>
+			
+
+		</div>
+		<header class="headernav">
+			<h1>Les articles de l'IIM #<?php echo $tag; ?></h1>
 		</header>
 
 				
@@ -45,7 +50,7 @@
 			</div>
 		</div>
 	    <div class="articles">
-	    	<h2>Les derniers articles</h2>
+	    	<h2>Les derniers articles  #<?php echo $tag; ?></h2>
 		    <?php 
 				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE type="'.$tag.'"  LIMIT 10');
 			    while($result = $reponse->fetch()) {
@@ -72,7 +77,7 @@
 	
 <?php 
 }else{
-
+	header("Location: erreur_action.php");
 }
 ?>
 
