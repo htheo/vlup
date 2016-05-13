@@ -1,8 +1,22 @@
+/*
+	Overpass =>
+	- font-family: 'overpassbold_italic';
+	- font-family: 'overpassextralight';
+	- font-family: 'overpassextralight_italic';
+	- font-family: 'overpasslight_italic';
+	- font-family: 'overpassitalic';
+	- font-family: 'overpasslight';
+	- font-family: 'overpassbold';
+	- font-family: 'overpassregular';
+	Fawn =>
+	- font-family: 'fawn_scriptregular';
+*/
+
 html, body {
 	margin: 0;
 	width: 100%;
 	height:100%;
-	font-family: Nunito;
+	font-family: 'overpassregular';
 	background: url('../images/fd_vulp.png');
 	
 }
@@ -28,7 +42,7 @@ header h1 {
 	font-size: 3em;
 	padding-top: 5%;
 	color: white;
-	
+	font-family: 'fawn_scriptregular';
 
 }
 header h2 {
