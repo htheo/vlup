@@ -11,12 +11,13 @@
 		<link href="css/style-tel.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="images/logo.jpg" />
-		<meta name="DC.title" content="Mes réalisations">
+
+		<link rel="icon" type="image/png" href="images/vlup.jpg" />
+		<meta name="DC.title" content="VLUP - le Vinci de Leonard">
 		<meta name="DC.creator" content="Theo Hinfray">
-		<meta name="DC.subject" content="" />
-		<meta name="DC.description" content="" />
-		<meta name="DC.publisher" content="">
+		<meta name="DC.subject" content="Blog troll sur l'IIM" />
+		<meta name="DC.description" content="Retrouver le blog troll de l'IIM, tous les axes s'y retrouvent Web, CV, CD, 3D, JV...." />
+		<meta name="DC.publisher" content="Theo Hinfray">
 		<meta name="DC.format" content="website">
 		<meta name="DC.identifier" content="www.theo-hinfray.fr">
 		<meta name="DC.language" content="fr-FR">
@@ -26,8 +27,8 @@
 
 
 		<!-- Referencement -->
-		<meta name="description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
-		<meta name="keywords" content="Cave, creativity, cave of creativity, creation, theo, hinfray, IIM, etudiant">
+		<meta name="description" content="Retrouver le blog troll de l'IIM, tous les axes s'y retrouvent Web, CV, CD, 3D, JV....">
+		<meta name="keywords" content="VLUP, PULV, troll IIM, troll axe web, article IIM, Gorafi, Pole Leonard de Vinci, troll, blog IIM">
 		<meta name="author" content="Theo Hinfray">
 		<meta name="robots" content="index"> 
 		<meta name="Indentifier-URL" content="www.theo-hinfray.fr">
@@ -35,10 +36,11 @@
 
 
 		<!-- Open Graph-->
-		<meta property="og:title" content="Mes réalisations">
+		<meta property="og:title" content="VLUP, le blog troll de l'IIM pour tous les axes">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="www.theo-hinfray.fr">
-		<meta property="og:site_name" content="Mes réalisations - Theo Hinfray">
+		<meta property="og:url" content="www.vlup.fr">
+		<meta property="og:image" content="images/bannier.jpg">
+		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
 		<meta property="og:description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
 		<script type="text/javascript" src="js/script.js"></script>
 		<!-- END Open Graph-->
@@ -46,7 +48,7 @@
 	<body>
 		<header>
 			<h1>VLUP</h1>
-			<h2>Le gorafi de l'IIM</h2>
+			<h2>Le Vinci du Leonard Universitaire</h2>
 		</header>
 
 				

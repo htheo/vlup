@@ -15,9 +15,10 @@
 
 		</div>
 	<div class="erreur">
-
-		<img src="images/logo_title.png">
-		<p>Oups...<br> tu ne peux pas faire ça désolé</p>
+		<div class="content">
+			<h2>Oups...<h2>
+			<p>tu ne peux pas faire ça désolé</p>
+		</div>
 	</div>
 </body>
 </html>

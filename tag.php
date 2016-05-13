@@ -6,9 +6,10 @@
 		<?php
 		if (isset($_GET['type'])){
 
-		$tag = $_GET['type'];
+		$tag = htmlentities($_GET['type']);
 		?>
 		<title>VLUP les articles de l'IIM avec le tag <?php echo $tag; ?></title>
+
 
 		<meta charset="UTF-8">
 		<meta http-equiv="content-language" content="fr">
@@ -17,7 +18,39 @@
 		<link href="css/style-tel.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="css/image/logo2.png" />
+
+		<link rel="icon" type="image/png" href="images/vlup.jpg" />
+		<meta name="DC.title" content="VLUP les articles de l'IIM avec le tag <?php echo $tag; ?>">
+		<meta name="DC.creator" content="Theo Hinfray">
+		<meta name="DC.subject" content="Blog troll sur l'IIM" />
+		<meta name="DC.description" content="Retrouver le blog troll de l'IIM, tous les axes, mais la on parle du #<?php echo $tag; ?>" />
+		<meta name="DC.publisher" content="Theo Hinfray">
+		<meta name="DC.format" content="website">
+		<meta name="DC.identifier" content="www.theo-hinfray.fr">
+		<meta name="DC.language" content="fr-FR">
+		<meta name="DC.coverage" content="World">
+		<meta name="DC.rights" content="&copy; Badabouh corp">
+		<!-- END Dublin Core -->
+
+
+		<!-- Referencement -->
+		<meta name="description" content="Retrouver le blog troll de l'IIM avec tous ses axes, mais la on parle du <?php echo $tag; ?>">
+		<meta name="keywords" content="VLUP, PULV, troll IIM, troll axe <?php echo $tag; ?>, IIM axe <?php echo $tag; ?>, Gorafi, Pole Leonard de Vinci, blog IIM">
+		<meta name="author" content="Theo Hinfray">
+		<meta name="robots" content="index"> 
+		<meta name="Indentifier-URL" content="www.theo-hinfray.fr">
+		<!-- END Référencement -->
+
+
+		<!-- Open Graph-->
+		<meta property="og:title" content="VLUP, le blog troll de l'IIM pour tous les axes">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="www.vlup.fr">
+		<meta property="og:image" content="images/bannier.jpg">
+		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
+		<meta property="og:description" content="Retrouver le blog troll de l'IIM, tous les axes, mais la on parle du #<?php echo $tag; ?>">
+		<script type="text/javascript" src="js/script.js"></script>
+		<!-- END Open Graph-->
 
 
 		<!-- END Open Graph-->
