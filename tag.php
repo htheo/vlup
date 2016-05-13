@@ -49,7 +49,7 @@
 		<meta property="og:image" content="images/bannier.jpg">
 		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
 		<meta property="og:description" content="Retrouver le blog troll de l'IIM, tous les axes, mais la on parle du #<?php echo $tag; ?>">
-		<script type="text/javascript" src="js/script.js"></script>
+	
 		<!-- END Open Graph-->
 
 
@@ -105,6 +105,17 @@
 		    	
 		    
 		</div>
+		<footer>
+			<div class="footer">
+				<a href="apropos.php">A propos de nous</a>
+			</div>
+			<div class="footer">
+				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
+			</div>
+	
+		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		</footer>
 
 
 	

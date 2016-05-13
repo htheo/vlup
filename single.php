@@ -110,7 +110,14 @@
 
 
 		<footer>
-
+			<div class="footer">
+				<a href="apropos.php">A propos de nous</a>
+			</div>
+			<div class="footer">
+				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
+			</div>
+	
+		
 		</footer>
 <?php
 			

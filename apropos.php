@@ -9,6 +9,7 @@
 
 		<link href="css/fontcall.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-tel.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width" />
 
@@ -42,56 +43,38 @@
 		<meta property="og:image" content="images/bannier.jpg">
 		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
 		<meta property="og:description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
-
-		
+		<script type="text/javascript" src="js/script.js"></script>
 		<!-- END Open Graph-->
 	</head>
-	<body onload="onload()">
-		<header>
+	<body>
+		<div class="navbar">
+			<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
+			<a class="center" href="index.php"><img src="images/logo_title.png" alt="logo retour bureau"></a>
+			
+
+		</div>
+		<header class="headernav">
 			<h1>VLUP</h1>
-			<h2>Le Vinci du Leonard Universitaire</h2>
+			<h2>A propos de nous ?</h2>
 		</header>
 
-				
-	    <div class="sidebars">
-		    <div class="sidebar">
-				<h2>type d'articles</h2>
-				<ul>
-					<li><a href="tag.php?type=Web">Web</a></li>
-					<li><a href="tag.php?type=CV">Com Visuelle</a></li>
-					<li><a href="tag.php?type=CD">Com Digitale</a></li>
-					<li><a href="tag.php?type=DI">Design Interactif</a></li>
-					<li><a href="tag.php?type=3D">3D</a></li>
-					<li><a href="tag.php?type=JV">Jeu Vidéo</a></li>
-					<li><a href="tag.php?type=BAP">BAP</a></li>
-					<li><a href="tag.php?type=Pole">Pole Leonard De Vinci</a></li>
-				</ul>
-			</div>
-		</div>
-	    <div class="articles">
-	    	<h2>Les derniers articles</h2>
-		    <?php 
-				include('config.php');
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 LIMIT 10');
-			    while($result = $reponse->fetch()) {
-		 			$ID=$result['ID'];
-					?>
-					<div class="article">
-						<h3><?php echo $result['title']; ?></h3>
-						<a href="single.php?ID=<?php echo $ID; ?>"><img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?>"></a>
-						<p><?php $description = $result['description'];
-						echo  substr($description , 0 , 100  )."..."; ?></p>
-					</div>
-					<?php
-				}
-		 
-			    $reponse->closeCursor();
+		<div class="propos">
+			<h3>Pourquoi le VLUP ?</h3>
+			<p>Le VLUP est tout d'abord du troll, définition ici -> <a href="troll.php">coucou je suis le troll</a> <- 
+				<br><br>Tout ce qui se situe sur cetta page n'est pas à prendre au sérieux, 
+				<br><br>
+				Si vous trouvez certains articles trop offensant pour l'image de votre axe ou de l'école contacter nous sur facebook nous sommes ouvert aux débats.</p>
 
+			<h3>Pour qui le VLUP ?</h3>
+			<p>Le VLUP est une sortes de Gorafi, donc tout amateur de troll est accepté sur ce site.</p>
 
-	    	?>
-		    	
-		    
+			<h3>Qui est à l'origine du VLUP ?</h3>
+			<p>Une idée développé par Alex Landeau et Théo Hinfray, 2 années 2 de l'axe web assez mauvais. Destiné à faire rire, si jamais vous trouvez ça offensant ou pas drôle allez les voir ! 
+				<br><br> Sinon pour la création d'articles pour l'instant il y a aussi Mathieu Rella un autre web qui fait du mauvais contenu.
+
+				<br><br> Si jamais vous voulez rejoindre la team contacter nous sur facebook c'est avec plaisir !</p>
 		</div>
+	    
 
 
 		<footer>

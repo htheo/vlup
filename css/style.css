@@ -26,10 +26,17 @@ a {
 html {
 	background-color:rgba(200,200,200,0.2); 
 }
+ul, li, li a {
+	list-style-type : none;
+	text-decoration: none;
+	color: black;
+	padding-left: 2%;
+}
 
 header {
-	background-image: url('../images/bannier.jpg');
-	height: 40%;
+	background-color: rgba(0,0,0,0.8);
+	background-image: url('../images/1.gif');
+	height: 60%;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center center;
@@ -40,7 +47,7 @@ header {
 header h1 {
 	margin:0;
 	font-size: 3em;
-	padding-top: 5%;
+	padding-top: 10%;
 	color: white;
 	font-family: 'fawn_scriptregular';
 
@@ -58,29 +65,36 @@ header h2 {
 .sidebars {
 	float: right;
 	margin-top: 2%;
+	margin-right: 5%;
 	text-align: center;
 	width: 25%;
 	
 	
 }
 .sidebar {
-	padding: 3%;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
 	text-align: left;
 	background-color: white;
 	width: 80%;
+	border: 1px solid rgba(0,0,0,0.2);
 }
 .articles {
 	float: right;
 	width: 60%;
 	
 	color: black;
-	margin-top: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	text-align: center;
 }
 .articles h2 {
 	text-align: center;
 }
 .article{
+	border: 1px solid rgba(0,0,0,0.2);
 	text-align: left;
 	width: 80%;
 	padding: 4%;
@@ -154,13 +168,20 @@ header h2 {
 	text-align: center;
 }
 
+/* page a propos  */
+.propos {
+	padding-left: 10%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 20%;
+}
 
 /*   page erreur   */
 
 .erreur {
 		background-image: URL('../images/bannier.jpg');
 	height: 100%;
-	padding-top: 20%;
+	padding-top: 10%;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center center;
@@ -174,4 +195,50 @@ header h2 {
 	color: white;
 	text-align: left;
 
+}
+/*   page troll   */
+
+.troll {
+	background-image: URL('../images/giphy.gif');
+	height: 100%;
+	padding-top: 10%;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.troll .content {
+
+	width: 30%;
+	margin-left: 60%;
+	color: white;
+	text-align: left;
+
+}
+footer {
+
+		background-image: url('../images/bannier.jpg');
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	float: right;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: white;
+	text-align: center;
+}
+.footer {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+}
+.footer a {
+	color: white;
+}
+.footer img {
+	width: 10%;
 }

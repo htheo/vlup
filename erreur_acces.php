@@ -17,7 +17,7 @@
 	<div class="erreur">
 		<div class="content">
 			<h2>Oups...<h2>
-			<p>tu ne peux pas faire ça désolé</p>
+			<p>tu ne peux pas faire ça désolé, tu n'as pas les droits</p>
 		</div>
 	</div>
 </body>
