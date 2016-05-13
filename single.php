@@ -62,30 +62,25 @@
 		<meta property="og:description" content="<?php echo substr($val['description'], 0 , 100  )."..."; ?> #<?php echo $val['type']; ?> ">
 		<!-- END Open Graph-->
 	</head>
-	<body class="body">
+	<body>
 
 
 		<div class="navbar">
 			<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
 			<a class="center" href="index.php"><img src="images/logo_title.png" alt="logo retour bureau"></a>
-			
-
 		</div>
 		<div class="singles">
 
 			<div class="single">
 				<h1><?php echo $val['title']; ?></h1>
 				<img src="avatars/<?php echo $val['img_nom']; ?>" alt="<?php echo $val['title']; ?> par Théo Hinfray">
-
-				
-
 				<p><?php echo $val['description']; ?> <br><br></p>
 			</div>
 		</div>
 
 		<div class="single_plus">
 			<h2>En voir plus...</h2>
-			<div class="3art">
+			<div class="art3">
 				<?php 
 				$reponse = $db->query('SELECT ID, img_nom, title FROM vlup_articles2 ORDER BY RAND() LIMIT 3');
 				    while($result = $reponse->fetch()) {
@@ -128,8 +123,10 @@
 	}
 
 }else{
+
 	
 header("Location: erreur_action.php");
+
 		
 	}
 	?>

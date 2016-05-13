@@ -43,7 +43,6 @@
 		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
 		<meta property="og:description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
 
-		
 		<!-- END Open Graph-->
 	</head>
 	<body onload="onload()">
@@ -95,6 +94,7 @@
 
 
 		<footer>
+
 			<div class="footer">
 				<a href="apropos.php">A propos de nous</a>
 			</div>
@@ -103,6 +103,7 @@
 			</div>
 	
 		
+
 		</footer>
 	
 

@@ -6,7 +6,8 @@
 
 	<title>connection</title>
 	<meta name="connection" >
-	
+
+	<link href="css/fontcall.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	
 
@@ -25,20 +26,27 @@
 	<div class='admin'>
 				<form method="POST" action="validation.php">
 					<h1>Bonjour Théo</h1><br>
+					<div class="formContent">
+						<p class="formSubContent">
+							<label for="pseudoForm">Votre pseudo ou nom de votre entreprise</label>
+							<input id="pseudoForm" class="form-input" type="text" name="pseudo" pattern"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+						</p>
 
-					<p><input class="form-input" type="text" name="pseudo" pattern"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Votre pseudo ou nom de votre entreprise"></p>
-							
-
-					<p><input class="form-input" type="password" pattern"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" name="motdepasse" placeholder="mot de passe"></p>
+						<p class="formSubContent">
+							<label for="passwordForm">Votre mot de passe</label>
+							<input id="passwordForm" class="form-input" type="password" pattern"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" name="motdepasse">
+						</p>
+					</div>
 
 					<div class="form-submit">
-						<input class='btn'type="submit" value="Se Connecter">	
+						<button class='btn' id="#btn1" type="submit"></button>
 					</div>
 				</form>
 	</div>
 </div>
 	<footer>
-		
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</footer>
 
 </body>
