@@ -150,8 +150,140 @@ header h2 {
 .article_single img {
 	width: 100%;
 }
-.3art {
+
+.art3 {
 	text-align: center;
+}
+
+
+/* Form Part */
+
+.formContent {
+	padding: 35px 0;
+}
+
+.formContent:nth-child(odd) {
+	background: none;
+}
+
+.formContent:last-child {
+	border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type='text'], input[type='password'] {
+	width: 220px;
+	padding: 10px 10px 12px 60px;
+	font-size: 12px;
+	color: #555;
+	border: 1px solid #aaa;
+	background-color: #fff;
+}
+
+.formSubContent {
+	display: inline-block;
+	position: relative;
+	margin: 0 5px 0 0;
+}
+
+.formSubContent input {
+	transition: .1s all linear;
+}
+
+.formSubContent label {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	font-size: 12px;
+	color: #aaa;
+	transition: .1s all linear;
+	cursor: text;
+}
+
+
+.formContent .formSubContent.active input {
+	padding-left: 5px;
+}
+
+.formContent .formSubContent.active label {
+	top: 39px;
+	left: 0;
+	width: 220px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	font-size: 10px;
+	color: #fff;
+	background: #ec7f00;
+}
+
+/* Button Style */
+
+button {
+	outline: none;
+	height: 40px;
+	text-align: center;
+	width: 130px;
+	border-radius: 40px;
+	background: #fff;
+	border: 2px solid #ec7f00;
+	color: #ec7f00;
+	letter-spacing: 1px;
+	text-shadow: 0;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+button:hover {
+	color: white;
+	background: #ec7f00;
+}
+button:active {
+	letter-spacing: 2px;
+}
+button:after {
+	content: "SUBMIT";
+}
+
+.onclic {
+	width: 40px;
+	border-color: #bbbbbb;
+	border-width: 3px;
+	font-size: 0;
+	border-left-color: #ec7f00;
+	-webkit-animation: rotating 2s 0.25s linear infinite;
+	animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+	content: "";
+}
+.onclic:hover {
+	color: #ec7f00;
+	background: white;
+}
+
+.validate {
+	font-size: 13px;
+	color: white;
+	background: #ec7f00;
 }
 
 

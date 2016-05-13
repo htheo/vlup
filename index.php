@@ -41,7 +41,6 @@
 		<meta property="og:url" content="www.theo-hinfray.fr">
 		<meta property="og:site_name" content="Mes réalisations - Theo Hinfray">
 		<meta property="og:description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
-		<script type="text/javascript" src="js/script.js"></script>
 		<!-- END Open Graph-->
 	</head>
 	<body>
@@ -93,9 +92,8 @@
 
 
 		<footer>
-			
-	
-		
+			<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+			<script type="text/javascript" src="js/script.js"></script>
 		</footer>
 	
 

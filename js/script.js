@@ -1,92 +1,40 @@
-var elem2;
-		elem2 = "accueil";
-		var x;
-		x=1;
+$(document).ready(function() {
 
-			function appear(elem)
-			   {
-			 		
-				 	document.getElementById("info").style.marginLeft= "-100%";
-				document.getElementById("cave").style.marginTop= "-100%";
-				 	document.getElementById("formulaire").style.marginLeft= "100%";
-				 
-			
-		}
-			function appear2(elem)
-			   {
-			 	if (elem == elem2){
+	$('input').each(function() {
 
-			 	}
-			 	else {
+		$(this).on('focus', function() {
+			$(this).parent('.formSubContent').addClass('active');
+		});
 
-				 	document.getElementById(elem).style.marginLeft= "0%";
-
-				 	document.getElementById("cave").style.marginTop= "-100%";
-					 document.getElementById("formulaire").style.marginLeft= "100%";
-
-				}
-
+		$(this).on('blur', function() {
+			if ($(this).val().length == 0) {
+				$(this).parent('.formSubContent').removeClass('active');
 			}
-			function appear3(elem){
-				 if (elem == elem2){
+		});
 
-				 }
-				 else {
+		if ($(this).val() != '') $(this).parent('.formSubContent').addClass('active');
 
-				 	document.getElementById(elem).style.marginLeft= "0%";
-					document.getElementById("cave").style.marginTop= "-100%";
-					 	document.getElementById("info").style.marginLeft= "-100%";
-					}
+	});
 
+	$(function() {
+		$( "#btn1" ).click(function() {
+			$( "#btn1" ).addClass( "onclic", 250, validate);
+		});
 
-				
+		function validate() {
+			setTimeout(function() {
+				$( "#btn1" ).removeClass( "onclic" );
+				$( "#btn1" ).addClass( "validate", 450, callback );
+			}, 2250 );
+		}
+		function callback() {
+			setTimeout(function() {
+				$( "#btn1" ).removeClass( "validate" );
+			}, 1250 );
+		}
+	});
 
-				}
-				function appear4(elem){
-				 
-					
-				 	document.getElementById(elem).style.marginTop= "-100%";
-				 }
-				 function appear5(elem){
-				 
-					if (x == 1){
-						document.getElementById(elem).style.marginTop= "-100%";
-						x = 0;
-
-
-					}else{
-						document.getElementById(elem).style.marginTop= "0%";
-						x = 1;
-						
-					}				 	
-				 }
-				function slide1() {
-					document.getElementById("slide").style.marginLeft= "0%";
-					document.getElementById("1").className= "point";
-					document.getElementById("2").className= "point2";
-					document.getElementById("3").className= "point2";
-
-				}
-				function slide2() {
-					document.getElementById("slide").style.marginLeft= "-66.7%";
-					document.getElementById("2").className= "point";
-					document.getElementById("1").className= "point2";
-					document.getElementById("3").className= "point2";
-
-				}
-				function slide3() {
-					document.getElementById("slide").style.marginLeft= "-133%";
-					document.getElementById("3").className= "point";
-					document.getElementById("1").className= "point2";
-					document.getElementById("2").className= "point2";
-
-				}
-				function grande(elem){
-					document.getElementById(elem).className= "grande_img";
-				}
-				function petit(elem){
-					document.getElementById(elem).className= "image_dessin";
-				}
+});
 
 
 

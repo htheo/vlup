@@ -16,7 +16,8 @@ if (empty($_SESSION["ID"])||$_SESSION['ID']!=1) {
 
 	<title>Insertion image</title>
 	<meta name="connection" >
-	
+
+	<link href="css/fontcall.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	
 
@@ -34,14 +35,17 @@ if (empty($_SESSION["ID"])||$_SESSION['ID']!=1) {
 		<form method="post" action="uploadimage.php" enctype="multipart/form-data">
 				<h2>Daily Post</h2>
 
-	      <div><label>Image :</label><input type="file" id="avatar"  name="avatar"/> </div>
+	      <div class="formContent">
+			  <label for="avatar">Image :</label>
+			  <input type="file" id="avatar" name="avatar"/>
+		  </div>
 
-	     
-
-						<p><input type="text" name="title" value="Le petit titre" required ></p><br>
-									
-						
-						
+			<div class="formContent">
+				<p class="formSubContent">
+					<label for="petitTitre">Le petit titre</label>
+					<input type="text" name="title" id="petitTitre" required >
+				</p><br>
+			</div>
 						<p>Type : </p>
 						<SELECT name="type" size="1" required>
 							<OPTION value="Web">Web</option>
@@ -52,21 +56,29 @@ if (empty($_SESSION["ID"])||$_SESSION['ID']!=1) {
 							<OPTION value="3D">3D</option>
 							<OPTION value="JV">JV</option>
 							<OPTION value="Pole">Pole</option>
-
-							
-
 						</SELECT><br>
 
-								
-						<p><textarea type="text" name="description" placeholder="La petite description"></textarea></p><br>
-				
-			
-			
-				<input class="btn"type="submit"></br></br>
+
+			<div class="formContent">
+				<p class="formSubContent">
+					<label for="petiteDescription">La petite description</label>
+					<textarea id="petiteDescription" type="text" name="description"></textarea>
+				</p><br>
+			</div>
+
+
+				<div class="form-submit">
+					<button class='btn' id="#btn1" type="submit"></button>
+				</div>
 			</form>
 
 	</div>
 </div>
+
+<footer>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</footer>
 
 </body>
 </html>
