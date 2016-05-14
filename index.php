@@ -3,14 +3,7 @@
 
 	<head>
 		<title>VLUP</title>
-
-		<meta charset="UTF-8">
-		<meta http-equiv="content-language" content="fr">
-
-		<link href="css/fontcall.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width" />
+        <?php include('header.php') ?>
 
 		<link rel="icon" type="image/png" href="images/vlup.jpg" />
 		<meta name="DC.title" content="VLUP - le Vinci de Leonard">
@@ -85,30 +78,12 @@
 				}
 		 
 			    $reponse->closeCursor();
-
-
+            
 	    	?>
-		    	
-		    
+            
 		</div>
-
-
-		<footer>
-
-			<div class="footer">
-				<a href="apropos.php">A propos de nous</a>
-			</div>
-			<div class="footer">
-				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
-			</div>
-	
-		
-
-		</footer>
-	
-
-<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+        
+		<?php include('footer.php') ?>
 	</body>
 
 </html>
