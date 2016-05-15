@@ -68,11 +68,11 @@
 				Si vous trouvez certains articles trop offensant pour l'image de votre axe ou de l'école contacter nous sur facebook nous sommes ouvert aux débats.</p>
 
 			<h3>Pour qui le VLUP ?</h3>
-			<p>Le VLUP est une sortes de Gorafi, donc tout amateur de troll est accepté sur ce site.</p>
+			<p>Le VLUP est une sorte de Gorafi, donc tout amateur de troll est accepté sur ce site.</p>
 
 			<h3>Qui est à l'origine du VLUP ?</h3>
-			<p>Une idée pas terrible développée par Alex Landeau et Théo Hinfray, 2 années 2 de l'axe web assez mauvais. Destiné à faire rire, si jamais tu trouves ça offensant ou pas tu peux aller les voir ! 
-				<br><br> Sinon pour la création d'articles pour l'instant il y a aussi Mathieu Rella un autre web qui fait du mauvais contenu.
+			<p>Une idée pas terrible développée par Alex Landeau et Théo Hinfray, 2 A2 de l'axe web assez mauvais. Destiné à faire rire, si jamais tu trouves ça offensant ou pas tu peux aller les voir ! 
+				<br><br> Sinon pour la création d'articles pour l'instant il y a aussi Mathieu Rella et Matthieu Lalbat deux autres webs qui font du mauvais contenu.
 
 				<br><br> Si jamais vous voulez rejoindre la team contacter nous sur facebook c'est avec plaisir !</p>
 		</div>
