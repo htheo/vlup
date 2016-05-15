@@ -16,7 +16,7 @@ html, body {
 	margin: 0;
 	width: 100%;
 	height:100%;
-	font-family: 'overpassregular';
+	font-family: 'overpassregular', Arial, sans-serif;
 	background: url('../images/fd_vulp.png');
 	
 }
@@ -41,26 +41,26 @@ p {
 }
 header {
 	background-color: rgba(0,0,0,0.8);
+	background: no-repeat fixed center;
 	height: 60%;
 	width: 100%;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 }
+
 header h1 {
 	margin:0;
 	font-size: 3em;
 	padding-top: 10%;
 	color: white;
-	font-family: 'fawn_scriptregular';
-
+	font-family: 'fawn_scriptregular', Arial, sans-serif;
 }
+
 header h2 {
 	margin:0;
 	color: rgba(255,255,255,0.9); 
 }
+
 /*  position de base  */
 
 .assombrir {
@@ -71,8 +71,12 @@ header h2 {
 
 /*          accueil          */
 .headernav h1 {
+
+/*  accueil  */
+
 	padding-top: 15%;
 }
+
 .sidebars {
 	float: right;
 	margin-top: 2%;
@@ -80,19 +84,16 @@ header h2 {
 	text-align: center;
 	width: 25%;
 	padding-bottom: 2%;
-	
 }
 
 .sidebar {
-	padding-left: 10%;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
+	padding: 5% 5% 5% 10%;
 	text-align: left;
 	background-color: white;
 	width: 80%;
 	border: 1px solid rgba(0,0,0,0.2);
 }
+
 .articles {
 	float: right;
 	width: 60%;
@@ -102,9 +103,11 @@ header h2 {
 	text-align: center;
 	padding-bottom: 2%;
 }
+
 .articles h2 {
 	text-align: center;
 }
+
 .article{
 	border: 1px solid rgba(0,0,0,0.2);
 	text-align: left;
@@ -119,8 +122,8 @@ header h2 {
 }
 
 
-
 /*/                single article */
+
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -129,6 +132,7 @@ header h2 {
 	border: 1px solid rgba(0,0,0,0.2);
 	padding: 1%;
 }
+
 .navbar .center {
 	margin-left: 40%;
 	height: 80%;
@@ -136,27 +140,33 @@ header h2 {
 	text-align: center;
 	width: 100%;
 }
+
 .navbar img {
 	display: inline-block;
 }
+
 .navbar img {
 	height: 100%;
 }
+
 .singles{
 	width: 60%;
 	margin-left: 10%;
 	padding-right: 5%;
 	padding-left: 5%;
 }
+
 .single img {
 	width: 100%;
 }
+
 .single {
 	width: 100%;
 	background-color: rgba(255,255,255,0.2);
 	margin: 0;
 	padding-top: 10%;
 }
+
 .single h1, .single p{
 	padding: 2%;
 }
@@ -166,11 +176,13 @@ header h2 {
 	color: white;
 	padding: 2%;
 }
+
 .article_single {
 	width: 30%;
 	display: inline-block;
 	padding: 1%;
 }
+
 .article_single img {
 	width: 100%;
 }
@@ -181,23 +193,18 @@ header h2 {
 
 /* page a propos  */
 .propos {
-	padding-left: 15%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-right: 20%;
+
+	padding: 1% 20% 1% 10%;
 }
 
 /*   page erreur   */
 
 .erreur {
-		background-image: URL('../images/bannier.jpg');
+	background: url('../images/bannier.jpg') no-repeat fixed center;
+	background-size: cover;
 	height: 100%;
 	padding-top: 10%;
 	width: 100%;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .erreur .content {
 
@@ -210,15 +217,13 @@ header h2 {
 /*   page troll   */
 
 .troll {
-	background-image: URL('../images/giphy.gif');
+	background: url('../images/giphy.gif') no-repeat fixed center;
 	height: 100%;
 	padding-top: 10%;
 	width: 100%;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .troll .content {
 
 	width: 30%;
@@ -233,29 +238,36 @@ footer .pad {
 
 }
 footer {
-
-		background-image: url('../images/bannier.jpg');
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #333333;
 	text-align: center;
 	width: 100%;
 	float: right;
-	
 	color: white;
-	text-align: center;
+	background-image: none !important;
+	-webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1);
 }
+
 .footer {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40%;
+	height: 75px;
+	line-height: 75px;
+	white-space: nowrap;
+	position: relative;
 }
+
 .footer a {
 	color: white;
 }
 .footer img {
-	width: 10%;
+	max-height: 30px;
+	max-width: 30px;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	margin: auto;
 }
 
 /* Form Part */
@@ -389,7 +401,7 @@ button:after {
 }
 
 
-/*   page erreur   */
+
 
 /* telephone       */
 
