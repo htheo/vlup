@@ -9,10 +9,10 @@
     <div class='menu_real'>
         <div class='admin'>
                     <form method="POST" action="validation.php">
-                        <h1>Bonjour Théo</h1><br>
+                        <h1>Bonjour Vlupien !</h1><br>
                         <div class="formContent">
                             <p class="formSubContent">
-                                <label for="pseudoForm">Votre pseudo ou nom de votre entreprise</label>
+                                <label for="pseudoForm">Votre pseudo</label>
                                 <input id="pseudoForm" class="form-input" type="text" name="pseudo" pattern"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                             </p>
 

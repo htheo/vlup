@@ -17,6 +17,26 @@ $(document).ready(function() {
 
 	});
 
+	$('.file-input').on('dragenter focus click', function() {
+		$('.file-drop-area').addClass('is-active');
+	});
+
+	$('.file-input').on('dragleave blur drop', function() {
+		$('.file-drop-area').removeClass('is-active');
+	});
+
+	$('.file-input').on('change', function() {
+		count = $('.file-input')[0].files.length;
+		if (count === 1) {
+			// if single file then show file name
+			$('.js-set-number').text($(".file-input").val().split('\\').pop());
+		} else {
+			// otherwise show number of files
+			$('.js-set-number').text(count + ' files selected');
+		}
+	});
+
+
 	$(function() {
 		$( "#btn1" ).click(function() {
 			$( "#btn1" ).addClass( "onclic", 250, validate);
