@@ -15,7 +15,7 @@
 		<meta http-equiv="content-language" content="fr">
 
 		<link href="css/style.css" rel="stylesheet">
-		<link href="css/style-tel.css" rel="stylesheet">
+
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width" />
 
@@ -55,15 +55,17 @@
 
 		<!-- END Open Graph-->
 	</head>
-	<body>
+	<body onload="onload();">
 		<div class="navbar">
 			<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
 			<a class="center" href="index.php"><img src="images/logo_title.png" alt="logo retour bureau"></a>
 			
 
 		</div>
-		<header class="headernav">
-			<h1>Les articles de l'IIM #<?php echo $tag; ?></h1>
+		<header>
+			<div class="assombrir headernav">
+				<h1>Les articles de l'IIM #<?php echo $tag; ?></h1>
+			</div>
 		</header>
 
 				
@@ -85,6 +87,7 @@
 	    <div class="articles">
 	    	<h2>Les derniers articles  #<?php echo $tag; ?></h2>
 		    <?php 
+		    	$i=0;
 				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE type="'.$tag.'"  LIMIT 10');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
@@ -96,9 +99,18 @@
 						echo  substr($description , 0 , 100  )."..."; ?></p>
 					</div>
 					<?php
+					$i++;
 				}
 		 
 			    $reponse->closeCursor();
+
+			    if($i==0){
+			    	?>
+			    		<h3>Apparemment il n'y a pas encore d'article pour le #<?php echo $tag; ?></h3>
+			    		<br>
+			    		<p>Si tu le souhaite tu peux rejoindre notre équipe et soumettre ton article, <a href="https://www.facebook.com/vlupdevinci/" target="_blank"><span>contacte nous sur facebook.</span></a> </p>
+			    	<?php
+			    }
 
 
 	    	?>
@@ -106,11 +118,13 @@
 		    
 		</div>
 		<footer>
-			<div class="footer">
-				<a href="apropos.php">A propos de nous</a>
-			</div>
-			<div class="footer">
-				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
+			<div class="assombrir pad">
+				<div class="footer">
+					<a href="apropos.php">A propos de nous</a>
+				</div>
+				<div class="footer">
+					<a href="https://www.facebook.com/vlupdevinci/" target="_blank"><img src="images/facebook.png"></a>
+				</div>
 			</div>
 	
 		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>

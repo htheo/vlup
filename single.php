@@ -13,7 +13,7 @@
 		<link href="css/style-tel.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="css/image/logo2.png" />
+		<link rel="icon" type="image/png" href="images/vlup.jpg" />
 
 <?php include('config.php'); ?>
 <?php    
@@ -105,11 +105,13 @@
 
 
 		<footer>
-			<div class="footer">
-				<a href="apropos.php">A propos de nous</a>
-			</div>
-			<div class="footer">
-				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
+			<div class="assombrir pad">
+				<div class="footer">
+					<a href="apropos.php">A propos de nous</a>
+				</div>
+				<div class="footer">
+					<a href="https://www.facebook.com/vlupdevinci/" target="_blank"><img src="images/facebook.png"></a>
+				</div>
 			</div>
 	
 		

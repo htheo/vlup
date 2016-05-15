@@ -46,7 +46,7 @@
 		<script type="text/javascript" src="js/script.js"></script>
 		<!-- END Open Graph-->
 	</head>
-	<body>
+	<body >
 		<div class="navbar">
 			<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
 			<a class="center" href="index.php"><img src="images/logo_title.png" alt="logo retour bureau"></a>
@@ -54,14 +54,16 @@
 
 		</div>
 		<header class="headernav">
-			<h1>VLUP</h1>
-			<h2>A propos de nous ?</h2>
+			<div class="assombrir pad">
+				<h1>VLUP</h1>
+				<h2>A propos de nous ?</h2>
+			</div>
 		</header>
 
 		<div class="propos">
 			<h3>Pourquoi le VLUP ?</h3>
 			<p>Le VLUP est tout d'abord du troll, définition ici -> <a href="troll.php">coucou je suis le troll</a> <- 
-				<br><br>Tout ce qui se situe sur cetta page n'est pas à prendre au sérieux, 
+				<br><br>Tout ce qui se situe sur cette page n'est pas à prendre au sérieux, 
 				<br><br>
 				Si vous trouvez certains articles trop offensant pour l'image de votre axe ou de l'école contacter nous sur facebook nous sommes ouvert aux débats.</p>
 
@@ -69,7 +71,7 @@
 			<p>Le VLUP est une sortes de Gorafi, donc tout amateur de troll est accepté sur ce site.</p>
 
 			<h3>Qui est à l'origine du VLUP ?</h3>
-			<p>Une idée développé par Alex Landeau et Théo Hinfray, 2 années 2 de l'axe web assez mauvais. Destiné à faire rire, si jamais vous trouvez ça offensant ou pas drôle allez les voir ! 
+			<p>Une idée pas terrible développée par Alex Landeau et Théo Hinfray, 2 années 2 de l'axe web assez mauvais. Destiné à faire rire, si jamais tu trouves ça offensant ou pas tu peux aller les voir ! 
 				<br><br> Sinon pour la création d'articles pour l'instant il y a aussi Mathieu Rella un autre web qui fait du mauvais contenu.
 
 				<br><br> Si jamais vous voulez rejoindre la team contacter nous sur facebook c'est avec plaisir !</p>
@@ -78,11 +80,13 @@
 
 
 		<footer>
-			<div class="footer">
-				<a href="apropos.php">A propos de nous</a>
-			</div>
-			<div class="footer">
-				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
+			<div class="assombrir pad">
+				<div class="footer">
+					<a href="apropos.php">A propos de nous</a>
+				</div>
+				<div class="footer">
+					<a href="https://www.facebook.com/vlupdevinci/" target="_blank"><img src="images/facebook.png"></a>
+				</div>
 			</div>
 	
 		

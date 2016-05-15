@@ -47,8 +47,10 @@
 	</head>
 	<body onload="onload()">
 		<header>
-			<h1>VLUP</h1>
-			<h2>Le Vinci du Leonard Universitaire</h2>
+			<div class="assombrir">
+				<h1>VLUP</h1>
+				<h2>Le Vinci du Leonard Universitaire</h2>
+			</div>
 		</header>
 
 				
@@ -94,16 +96,17 @@
 
 
 		<footer>
+			<div class="assombrir pad">
 
-			<div class="footer">
-				<a href="apropos.php">A propos de nous</a>
-			</div>
-			<div class="footer">
-				<a href="https://www.facebook.com/vlupdevinci/"><img src="images/facebook.png"></a>
-			</div>
-	
+				<div class="footer">
+					<a href="apropos.php">A propos de nous</a>
+				</div>
+				<div class="footer">
+					<a href="https://www.facebook.com/vlupdevinci/" target="_blank"><img src="images/facebook.png"></a>
+				</div>
 		
-
+			
+			</div>
 		</footer>
 	
 
