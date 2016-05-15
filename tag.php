@@ -3,6 +3,8 @@
 <!DOCTYPE html> 
 <html lang="fr">
 	<head>
+
+		<?php include('header.php') ?>
 		<?php
 		if (isset($_GET['type'])){
 
@@ -86,7 +88,7 @@
 				</ul>
 			</div>
 		</div>
-	    <div class="articles">
+	    <div class="articles artTag">
 	    	<h2>Les derniers articles  #<?php echo $tag; ?></h2>
 		    <?php 
 		    	$i=0;
@@ -119,21 +121,6 @@
 		    	
 		    
 		</div>
-		<footer>
-			<div class="assombrir pad">
-				<div class="footer">
-					<a href="apropos.php">A propos de nous</a>
-				</div>
-				<div class="footer">
-					<a href="https://www.facebook.com/vlupdevinci/" target="_blank"><img src="images/facebook.png"></a>
-				</div>
-			</div>
-	
-		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		</footer>
-
-
 	
 <?php 
 }else{
@@ -141,6 +128,7 @@
 }
 ?>
 
+	<?php include('footer.php') ?>
 	</body>
 
 </html>
