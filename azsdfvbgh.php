@@ -22,37 +22,42 @@
 
 
 			<form method="post" action="uploadimage.php" enctype="multipart/form-data">
-					<h2>Daily Post</h2>
+					<h2>C'est un jour ou tu peux manquer de respect fais toi plaisir ! ;)</h2>
 
 			  <div class="formContent">
-				  <label for="avatar">Image :</label>
+				  <label for="avatar">La petite image de type drôle :</label>
 				  <input type="file" id="avatar" name="avatar"/>
 			  </div>
 
 				<div class="formContent">
 					<p class="formSubContent">
-						<label for="petitTitre">Le petit titre</label>
+						<label for="petitTitre">Le petit titre de type très drôle</label>
 						<input type="text" name="title" id="petitTitre" required >
 					</p><br>
 				</div>
-							<p>Type : </p>
+							<p>C'est quoi le hashtag ? </p>
 							<SELECT name="type" size="1" required>
+
 								<OPTION value="Web">Web</option>
 								<OPTION value="CD">CD</option>
 								<OPTION value="CV">CV</option>
 								<OPTION value="DI">DI</option>
-								<OPTION value="BAP">BAP</option>
 								<OPTION value="3D">3D</option>
 								<OPTION value="JV">JV</option>
+								<OPTION value="BAP">BAP</option>
+								<OPTION value="ESILV">ESILV</option>
+									<OPTION value="PIX">PIX</option>
+								<OPTION value="EMLV">EMLV</option>
+								
 								<OPTION value="Pole">Pole</option>
 							</SELECT><br>
 
 
 				<div class="formContent">
-					<p class="formSubContent">
-						<label for="petiteDescription">La petite description</label>
-						<textarea id="petiteDescription" type="text" name="description"></textarea>
-					</p><br>
+					
+						<label for="petiteDescription">La petite description</label><br>
+						<textarea id="petiteDescription" type="text" placeholder="Le petit article ici" name="description"></textarea>
+				
 				</div>
 
 

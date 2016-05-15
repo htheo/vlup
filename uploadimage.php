@@ -10,6 +10,7 @@ if (empty($_SESSION["ID"])||$_SESSION['ID']!=1) {
 	$title		= htmlentities($_POST['title']);
 	$type	= $_POST['type'];
 	$description	= htmlentities($_POST['description']);
+	$description = str_replace("\n","<br/>",$description);
 
 function move_avatar($avatar)
 

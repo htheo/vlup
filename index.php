@@ -49,16 +49,18 @@
 				
 	    <div class="sidebars">
 		    <div class="sidebar">
-				<h2>type d'articles</h2>
 				<ul>
-					<li><a href="tag.php?type=Web">Web</a></li>
-					<li><a href="tag.php?type=CV">Com Visuelle</a></li>
-					<li><a href="tag.php?type=CD">Com Digitale</a></li>
-					<li><a href="tag.php?type=DI">Design Interactif</a></li>
-					<li><a href="tag.php?type=3D">3D</a></li>
-					<li><a href="tag.php?type=JV">Jeu Vidéo</a></li>
-					<li><a href="tag.php?type=BAP">BAP</a></li>
-					<li><a href="tag.php?type=Pole">Pole Leonard De Vinci</a></li>
+					<li><a href="tag.php?type=Web">#Web</a></li>
+					<li><a href="tag.php?type=CV">#CV</a></li>
+					<li><a href="tag.php?type=CD">#CD</a></li>
+					<li><a href="tag.php?type=DI">#DI</a></li>
+					<li><a href="tag.php?type=3D">#3D</a></li>
+					<li><a href="tag.php?type=JV">#JV</a></li>
+					<li><a href="tag.php?type=BAP">#BAP</a></li>
+					<li><a href="tag.php?type=ESILV">#ESILV</a></li>
+					<li><a href="tag.php?type=PIX">#PIX</a></li>
+					<li><a href="tag.php?type=EMLV">#EMLV</a></li>
+					<li><a href="tag.php?type=Pole">#Pole</a></li>
 				</ul>
 			</div>
 		</div>
