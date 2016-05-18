@@ -77,7 +77,7 @@
 	    	<h2>Les derniers articles</h2>
 		    <?php 
 				
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="0" ORDER BY "ID" DESC LIMIT 10 ');
+				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="0" ORDER BY ID DESC LIMIT 10 ');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
 					?>

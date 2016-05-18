@@ -56,7 +56,7 @@
 	    <div class="articles">
 	    	<h2>Les articles à valider cher admin</h2>
 		    <?php 
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="1" ORDER BY "ID" DESC LIMIT 10');
+				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="1" ORDER BY ID DESC LIMIT 10');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
 					?>
@@ -73,7 +73,7 @@
 						<input type="submit" name="validation" value="0" hidden>
 
 						
-						<input type="input" value="publier">
+						<input type="submit" type="input" value="publier">
 					</form>
 					<form method="post" action="qsdflh.php">
 						<input name="id" value="<?php echo $ID; ?>" hidden>
