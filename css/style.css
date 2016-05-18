@@ -640,6 +640,19 @@ textarea {
 	padding-bottom: 35px;
 }
 
+.admin.gestArticle .bigformContent{
+	padding: 0;
+}
+
+.admin.gestArticle .separForm::after{
+	display: block;
+	content: "";
+	width: 90%;
+	background-color: #ec7f00;
+	height: 5px;
+	margin: 25px auto;
+}
+
 @media screen and (max-width: 640px){
 	.admin{
 		width: 90%;
@@ -770,4 +783,9 @@ textarea {
   .footer img {
   	width: 40%;
   }
+}
+
+.adminLink{
+	text-align: center;
+	margin-bottom: 25px;
 }
