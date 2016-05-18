@@ -71,9 +71,9 @@
 						</div>
 						<img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title']; ?>">
 						<div class="file-drop-area">
-							  <span class="fake-btn">Choose files</span>
-							  <span class="file-msg js-set-number">or drag and drop files here</span>
-							  <input class="file-input" type="file" id="avatar" name="avatar" multiple>
+							  <span class="fake-btn">Choisir une image</span>
+							  <span class="file-msg js-set-number">drag and drop du .jpg ici</span>
+							  <input class="file-input" type="file" accept=".jpg" id="avatar" name="avatar" multiple>
 					  	</div>
 					  	<div class="select">
 							<SELECT name="type" size="1" required>
@@ -101,7 +101,7 @@
 						<input name="suppression" value="<?php echo $ID; ?>" hidden>
 
 						
-						<input type="submit" type="input" value="publier">
+						<input type="submit" value="publier">
 					</form>
 					<form method="post" action="qsdflh.php">
 						<input name="id" value="<?php echo $ID; ?>" hidden>

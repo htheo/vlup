@@ -1,5 +1,19 @@
 
 $(document).ready(function() {
+	if($('#avatar')){
+
+	}
+	$('#avatar').change(function () {
+    var ext = this.value.match(/\.(.+)$/)[1];
+    switch (ext) {
+        case 'jpg':
+           
+            break;
+        default:
+            alert("Ce n'est pas le bon format ! seul format autorisé : .jpg, ne t'amuse pas à remettre des ."+ext);
+            this.value = '';
+    }
+});
 
 	$('input').each(function() {
 

@@ -11,6 +11,7 @@ include('config.php');
 		header("Location: erreur_acces.php");
 	}
     $avatar = file_get_contents($_FILES['avatar']['tmp_name']);
+    echo $avatar;
 	$title		= htmlentities($_POST['title']);
 	$type	= htmlentities($_POST['type']);
 	$validation	= htmlentities($_POST['validation']);

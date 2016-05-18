@@ -31,8 +31,8 @@
 			  <div class="formContent">
 				  <h3>La petite image de type drôle :</h3>
 				  <div class="file-drop-area">
-					  <span class="fake-btn">Choose files</span>
-					  <span class="file-msg js-set-number">or drag and drop files here</span>
+					  <span class="fake-btn">Choisir une image</span>
+					  <span class="file-msg js-set-number">drag and drop du .jpg ici</span>
 					  <input class="file-input" type="file" id="avatar" name="avatar" accept=".jpg" multiple>
 				  </div>
 			  </div>
@@ -70,7 +70,7 @@
 
 				</div>
 					<div class="form-submit">
-						<input class='inputButton btn' id="#btn1" type="submit" value="Ajout"/>
+						<input class='inputButton btn' id="btn1" type="submit" value="Ajout"/>
 					</div>
 				</form>
 				<a href="admin.php">Espace Admin</a>
