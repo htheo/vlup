@@ -5,7 +5,7 @@
 
 		header("Location: erreur_acces.php");
 	}
-	if($_SESSION["role"]!=0){
+	if($_SESSION["role"]!=2){
 		header("Location: post.php");
 	}
 
@@ -22,7 +22,7 @@
 
 <body>
 	<div class="menu_real">
-		<div class="admin">
+		<div class="admin"><br><br><br>
 			<h1>Alors Quoi de neuf à mettre sur le site ? </h1>
 			<h2>C'est un jour ou tu peux manquer de respect fais toi plaisir ! ;)</h2>
 
@@ -62,7 +62,7 @@
 						<OPTION value="Pole">Pole</option>
 					</SELECT><br>
 				</div>
-				<input name="validation" value="0" hidden>
+				<input name="validation" value="1" hidden>
 				<!-- <input name="validation" value="0" hidden> -->
 				<div class="formContent">
 					<h3>La petite description</h3>
