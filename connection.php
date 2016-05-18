@@ -20,10 +20,13 @@
                                 <label for="passwordForm">Votre mot de passe</label>
                                 <input id="passwordForm" class="form-input" type="password" pattern"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" name="motdepasse">
                             </p>
+
                         </div>
 
                         <div class="form-submit">
-                            <button class='btn' id="#btn1" type="submit"></button>
+                            <input class='btn' id="#btn1" type="submit" value="Connection"></input>
+                     
+                            <a href="inscription.php"><input class='btn' id="#btn2" value="Inscription"></input></a>
                         </div>
                     </form>
         </div>
