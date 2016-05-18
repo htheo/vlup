@@ -589,7 +589,7 @@ textarea {
 }
 .onclic:hover {
 	color: rgba(236,127,0,0.2);
-	background: white;
+	background: none;
 }
 
 .validate {

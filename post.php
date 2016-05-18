@@ -70,7 +70,7 @@
 
 				</div>
 					<div class="form-submit">
-						<input class='inputButton btn' id="#btn1" type="submit" value="Ajout"/>
+						<input class='inputButton' type="submit" value="Ajout"/>
 					</div>
 				</form>
 				<a href="admin.php">Espace Admin</a>

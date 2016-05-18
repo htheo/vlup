@@ -74,17 +74,17 @@
 		<div class="sidebars">
 			<div class="sidebar">
 				<ul>
-					<li><a href="tag.php?type=Web"><input class="inputButton tagSize" value="#Web"/></a></li>
-					<li><a href="tag.php?type=CV"><input class="inputButton tagSize" value="#CV"/></a></li>
-					<li><a href="tag.php?type=CD"><input class="inputButton tagSize" value="#CD"/></a></li>
-					<li><a href="tag.php?type=DI"><input class="inputButton tagSize" value="#DI"/></a></li>
-					<li><a href="tag.php?type=3D"><input class="inputButton tagSize" value="#3D"/></a></li>
-					<li><a href="tag.php?type=JV"><input class="inputButton tagSize" value="#JV"/></a></li>
-					<li><a href="tag.php?type=BAP"><input class="inputButton tagSize" value="#BAP"/></a></li>
-					<li><a href="tag.php?type=ESILV"><input class="inputButton tagSize" value="#ESILV"/></a></li>
-					<li><a href="tag.php?type=PIX"><input class="inputButton tagSize" value="#PIX"/></a></li>
-					<li><a href="tag.php?type=EMLV"><input class="inputButton tagSize" value="#EMLV"/></a></li>
-					<li><a href="tag.php?type=Pole"><input class="inputButton tagSize" value="#Pole"/></a></li>
+					<li><a href="tag.php?type=Web"><input class="inputButton tagSize" type="button" value="#Web"/></a></li>
+					<li><a href="tag.php?type=CV"><input class="inputButton tagSize" type="button" value="#CV"/></a></li>
+					<li><a href="tag.php?type=CD"><input class="inputButton tagSize" type="button" value="#CD"/></a></li>
+					<li><a href="tag.php?type=DI"><input class="inputButton tagSize" type="button" value="#DI"/></a></li>
+					<li><a href="tag.php?type=3D"><input class="inputButton tagSize" type="button" value="#3D"/></a></li>
+					<li><a href="tag.php?type=JV"><input class="inputButton tagSize" type="button" value="#JV"/></a></li>
+					<li><a href="tag.php?type=BAP"><input class="inputButton tagSize" type="button" value="#BAP"/></a></li>
+					<li><a href="tag.php?type=ESILV"><input class="inputButton tagSize" type="button" value="#ESILV"/></a></li>
+					<li><a href="tag.php?type=PIX"><input class="inputButton tagSize" type="button" value="#PIX"/></a></li>
+					<li><a href="tag.php?type=EMLV"><input class="inputButton tagSize" type="button" value="#EMLV"/></a></li>
+					<li><a href="tag.php?type=Pole"><input class="inputButton tagSize" type="button" value="#Pole"/></a></li>
 				</ul>
 			</div>
 		</div>

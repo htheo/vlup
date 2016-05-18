@@ -3,8 +3,7 @@
 	<meta charset="UTF-8">
 		<meta http-equiv="content-language" content="fr">
 
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/style-tel.css" rel="stylesheet">
+		<?php include('header.php') ?>
 	<title>Erreur d'action</title>
 </head>
 <body>
