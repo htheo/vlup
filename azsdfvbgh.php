@@ -33,7 +33,7 @@
 				  <div class="file-drop-area">
 					  <span class="fake-btn">Choose files</span>
 					  <span class="file-msg js-set-number">or drag and drop files here</span>
-					  <input class="file-input" type="file" id="avatar" name="avatar" multiple>
+					  <input class="file-input" type="file" id="avatar" name="avatar" accept=".jpg" multiple>
 				  </div>
 			  </div>
 
