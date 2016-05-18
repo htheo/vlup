@@ -53,6 +53,10 @@ header h1 {
 	font-family: 'fawn_scriptregular', Arial, sans-serif;
 }
 
+.admin.gestArticle h1{
+	margin-bottom: 15px;
+}
+
 header .assombrir.headernav h1{
 	font-family: 'overpassbold_italic', Arial, sans-serif;
 	font-size: 2.5em;
@@ -509,6 +513,10 @@ input[type='text'], input[type='password'] {
 		background: #ec7f00;
 	}
 
+    .admin.gestArticle .formSubContent input{
+	    padding: 8px 0;
+    }
+
 }
 
 /*       formulaire de post da'rticle    */
@@ -641,7 +649,7 @@ textarea {
 }
 
 .admin.gestArticle .bigformContent{
-	padding: 0;
+	padding-bottom: 5px;
 }
 
 .admin.gestArticle .separForm::after{

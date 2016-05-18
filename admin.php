@@ -39,12 +39,17 @@
 									<input class="largInput" type="text" value="<?php echo $result['title']; ?>" name="title" id="petitTitre" required >
 								</p><br>
 							</div>
-							<img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title']; ?>">
-							<div class="file-drop-area">
-								<span class="fake-btn">Choose files</span>
-								<span class="file-msg js-set-number">or drag and drop files here</span>
-								<input class="file-input" type="file" id="avatar" name="avatar" multiple>
+
+							<div class="formContent">
+								<h3>La petite image de type drôle :</h3>
+								<img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title']; ?>">
+								<div class="file-drop-area">
+									<span class="fake-btn">Choose files</span>
+									<span class="file-msg js-set-number">or drag and drop files here</span>
+									<input class="file-input" type="file" id="avatar" name="avatar" multiple>
+								</div>
 							</div>
+							<h3>C'est quoi le Hashtag ?</h3>
 							<div class="select">
 								<SELECT name="type" size="1" required>
 									<OPTION value="<?php echo $type; ?>"><?php echo $type;  ?></option>
@@ -68,11 +73,11 @@
 							</div>
 							<input type="text" name="validation" value="0" hidden>
 							<input name="suppression" value="<?php echo $ID; ?>" hidden>
-							<input type="submit" type="input" value="publier">
+							<input type="submit" class="inputButton" value="Publier">
 						</form>
 						<form method="post" action="qsdflh.php">
 							<input name="id" value="<?php echo $ID; ?>" hidden>
-							<input type="submit" value="supprimer">
+							<input type="submit" class="inputButton" value="Supprimer">
 						</form>
 					</div>
 					<?php
