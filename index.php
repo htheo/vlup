@@ -68,7 +68,7 @@
 	    	<h2>Les derniers articles</h2>
 		    <?php 
 				include('config.php');
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 LIMIT 10');
+				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="0" LIMIT 10');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
 					?>
