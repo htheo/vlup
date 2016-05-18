@@ -3,7 +3,9 @@
 
 	<head>
 		<title>VLUP</title>
-        <?php include('header.php') ?>
+        <?php include('header.php');
+        include('config.php'); ?>
+
 
 		<link rel="icon" type="image/png" href="images/vlup.jpg" />
 		<meta name="DC.title" content="VLUP - le Vinci de Leonard">
@@ -74,8 +76,8 @@
 	    <div class="articles">
 	    	<h2>Les derniers articles</h2>
 		    <?php 
-				include('config.php');
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="0" LIMIT 10');
+				
+				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="0" ORDER BY "ID" DESC LIMIT 10 ');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
 					?>
