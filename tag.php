@@ -66,7 +66,7 @@
 		</div>
 		<header>
 			<div class="assombrir headernav">
-				<h1>Les articles de l'IIM #<?php echo $tag; ?></h1>
+				<h1>Les articles #<?php echo $tag; ?></h1>
 			</div>
 		</header>
 
