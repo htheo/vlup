@@ -17,7 +17,7 @@
 
 <body>
 	<div class="menu_real">
-		<div class="admin"><br><br><br>
+		<div class="admin">
 			<h1>Alors Quoi de neuf à mettre sur le site ? </h1>
 			<h2>C'est un jour ou tu peux manquer de respect fais toi plaisir ! ;)</h2>
 

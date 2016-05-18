@@ -403,7 +403,8 @@ footer {
 /* Form Part */
 
 .formContent {
-	padding: 20px 0 40px;
+	padding: 20px 0;
+	margin-bottom: 20px;
 }
 
 .formContent:nth-child(odd) {
@@ -639,6 +640,18 @@ textarea {
 	padding-bottom: 35px;
 }
 
+@media screen and (max-width: 640px){
+	.admin{
+		width: 90%;
+		margin: 20px auto 0;
+	}
+
+	.admin h2{
+		padding-top: 10px;
+		text-align: center;
+	}
+}
+
 
 /* File Drop */
 
@@ -682,6 +695,35 @@ textarea {
 }
 .file-input:focus {
 	outline: none;
+}
+
+@media screen and (max-width: 640px){
+	.file-drop-area{
+		width: 90%;
+		margin: auto;
+		border: none;
+		padding: 25px 2% 5px;
+		border: 1px dashed rgba(236,127,0,0.2);
+		border-radius: 3px;
+	}
+
+	.file-drop-area span{
+		display: block;
+	}
+
+	.file-msg{
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	.fake-btn{
+		margin-right: 0;
+	}
+
+	.file-input{
+		position: inherit;
+		height: auto;
+	}
 }
 
 
