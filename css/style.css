@@ -678,7 +678,7 @@ textarea {
 @media screen and (max-width: 640px){
 	.admin{
 		width: 90%;
-		margin: 20px auto 0;
+		padding: 20px auto 0;
 	}
 
 	.admin h2{

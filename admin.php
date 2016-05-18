@@ -22,6 +22,10 @@
 ?>
 	<body onload="onload()">
 
+	<div class="navbar">
+		<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
+	</div>
+
 	    <div class="admin gestArticle">
 	    	<h1>Les articles à valider cher admin</h1>
 		    <?php 
