@@ -433,6 +433,33 @@ input[type='text'], input[type='password'] {
 	background: #ec7f00;
 }
 
+@media screen and (max-width: 320px) {
+	.formContent{
+		padding-bottom: 0px;
+	}
+
+	.formSubContent{
+		display: block;
+		width: 70%;
+		margin: 0 auto 30px;
+	}
+
+	.formSubContent input{
+		min-width: 100%;
+	}
+
+	.formSubContent.active label {
+		min-width: 90% !important;
+		margin: auto;
+		transform: translateY(0);
+		padding-bottom: 3px;
+		font-size: 10px;
+		color: #fff;
+		background: #ec7f00;
+	}
+
+}
+
 /*       formulaire de post da'rticle    */
 
 form {
@@ -451,7 +478,7 @@ textarea {
 }
 /* Button Style */
 
-button {
+.inputButton {
 	outline: none;
 	height: 40px;
 	text-align: center;
@@ -467,16 +494,17 @@ button {
 	cursor: pointer;
 	-webkit-transition: all 0.25s ease;
 	transition: all 0.25s ease;
+	margin: 0 5px;
 }
-button:hover {
+.inputButton:hover {
 	color: #000;
 	background: rgba(236,127,0,0.2);
 }
-button:active {
+.inputButton:active {
 	letter-spacing: 2px;
 }
-button:after {
-	content: "SUBMIT";
+.inputButton:after {
+	content: "";
 }
 
 .onclic {
