@@ -1,17 +1,16 @@
 <?php
 require ('config.php');
   
-$pseudo		= htmlentities($_POST['pseudo']);
-$password	= htmlentities($_POST['motdepasse']);
 
-$connecte = 0;
+
 
 // On récupère tout le contenu de la table 
 
-if (isset($_GET['pseudo']) && isset($_GET['password'])) {
+if (isset($_POST['pseudo']) && isset($_POST['motdepasse'])) {
  
-    $pseudo = $_GET['pseudo'];
-    $password = $_GET['password'];
+    $pseudo		= htmlentities($_POST['pseudo']);
+	$password	= htmlentities($_POST['motdepasse']);
+	echo $pseudo." ".$password;
     $role = 2;
  
    $sql = "INSERT INTO 
@@ -36,6 +35,8 @@ if (isset($_GET['pseudo']) && isset($_GET['password'])) {
 
 
 	header("Location: connection.php");
+}else{
+	echo "bonjour";
 }
 
 

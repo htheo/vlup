@@ -1,12 +1,10 @@
-<?php require('config.php'); ?>
+<?php include('config.php'); ?>
 
 <?php
-	if(!isset($_SESSION["role"])){
-
+	if (empty($_SESSION["role"])) {
 		header("Location: erreur_acces.php");
-	}
-	if($_SESSION["role"]!=0){
-		header("Location: post.php");
+	}elseif($_SESSION['role']!=0){
+		header("Location: post.php")
 	}
 ?>
 
@@ -61,17 +59,16 @@
 						<OPTION value="Pole">Pole</option>
 					</SELECT><br>
 				</div>
-				<!-- <input name="validation" value="0" hidden> -->
+				<input name="validation" value="1" hidden>
 				<div class="formContent">
 					<h3>La petite description</h3>
 					<textarea id="petiteDescription" type="text" placeholder="Enjoy :)" name="description"></textarea>
 
 				</div>
 					<div class="form-submit">
-						<input class='inputButton btn' id="#btn1" type="submit" value="Ajout"/>
+						<button class='btn' id="#btn1" type="submit"></button>
 					</div>
 				</form>
-				<a href="admin.php">Espace Admin</a>
 
 		</div>
 	</div>
