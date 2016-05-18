@@ -420,6 +420,12 @@ footer {
 	border: 0;
 }
 
+@media screen and (max-width: 640px){
+	.admin.gestArticle .formContent img{
+		max-width: 100%;
+	}
+}
+
 button,
 input,
 select,
