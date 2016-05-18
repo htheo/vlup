@@ -53,6 +53,10 @@ header h1 {
 	font-family: 'fawn_scriptregular', Arial, sans-serif;
 }
 
+.admin.gestArticle h1{
+	margin-bottom: 15px;
+}
+
 header .assombrir.headernav h1{
 	font-family: 'overpassbold_italic', Arial, sans-serif;
 	font-size: 2.5em;
@@ -70,19 +74,13 @@ header .user-info {
 	right: 30px;
 }
 
-header .user-info a:hover {
-	background-color: rgba(236,127,0,0.2);
-	border: 1px solid rgba(116,63,2,0.2);
-}
-
-header div a {
-	border: 1px solid black;
-	cursor: pointer;
-	background-color: white;
-	border-radius: 7px;
-	padding: 15px 30px;
-	color: black;
-	font-weight: 700;
+@media screen and (max-width: 640px){
+	header .user-info {
+		position: inherit;
+		margin: auto;
+		text-align: center;
+		margin: 20px 0 0;
+	}
 }
 
 /*  position de base  */
@@ -121,16 +119,11 @@ header div a {
 	text-align: center;
 	display: inline-block;
 	margin: 1%;
-	border: 1px solid rgba(0,0,0,0.2);
 	border-radius: 10%;
 	text-align: center;
-	padding: 1% 1.5% 1% 1.5%;
 	transition-duration:1s;
 }
-.sidebars li:hover {
-	background-color: rgba(236,127,0,0.2);
-	border: 1px solid rgba(116,63,2,0.2);
-}
+
 .articles {
 	width: 90%;
 	max-width: 1200px;
@@ -180,6 +173,12 @@ header div a {
 }
 
 @media screen and (max-width: 640px) {
+
+	.article{
+		width: 90%;
+		margin: auto;
+	}
+
 	.article::after{
 		margin: 25px auto;
 	}
@@ -280,6 +279,13 @@ header div a {
 	padding: 2%;
 }
 
+@media screen and (max-width: 640px) {
+	.single{
+		width: 90%;
+		margin: auto;
+	}
+}
+
 .article_single {
 	width: 30%;
 	display: inline-block;
@@ -294,6 +300,18 @@ header div a {
 	text-align: center;
 }
 
+@media screen and (max-width: 640px){
+	.art3{
+		margin: 20px 0 0;
+	}
+
+	.article_single{
+		display: block;
+		width: 65%;
+		margin: auto;
+	}
+}
+
 /* page a propos  */
 .propos {
 
@@ -306,16 +324,31 @@ header div a {
 	background: url('../images/bannier.jpg') no-repeat fixed center;
 	background-size: cover;
 	height: 100%;
-	width: 100%;
 }
 .erreur .content {
-
-	width: 30%;
-	margin-left: 60%;
-	color: white;
-	text-align: left;
+	position: absolute;
+	border: 2px solid #F6BF80;
+	border-radius: 5px;
+	padding: 30px;
+	background-color: #FFEAD1;
+	top: 42%;
+	left: 40%;
 
 }
+
+.erreur .content p {
+	margin-bottom: 20px;
+}
+
+.erreur .content .back-button {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.erreur .content a {
+	padding: 10px 20px;
+}
+
 /*   page troll   */
 
 .troll {
@@ -374,7 +407,8 @@ footer {
 /* Form Part */
 
 .formContent {
-	padding: 20px 0 40px;
+	padding: 20px 0;
+	margin-bottom: 20px;
 }
 
 .formContent:nth-child(odd) {
@@ -407,7 +441,7 @@ input[type='text'], input[type='password'] {
 	font-size: 12px;
 	color: #555;
 	border: 1px solid #aaa;
-	background-color: #fff;
+	/*background-color: #fff;*/
 }
 
 .largInput{
@@ -479,6 +513,10 @@ input[type='text'], input[type='password'] {
 		background: #ec7f00;
 	}
 
+    .admin.gestArticle .formSubContent input{
+	    padding: 8px 0;
+    }
+
 }
 
 /*       formulaire de post da'rticle    */
@@ -505,7 +543,7 @@ textarea {
 	text-align: center;
 	width: 130px;
 	border-radius: 40px;
-	background: #fff;
+	background: none;
 	border: 2px solid rgba(236,127,0,0.2);
 	color: #ec7f00;
 	letter-spacing: 1px;
@@ -517,8 +555,25 @@ textarea {
 	transition: all 0.25s ease;
 	margin: 0 5px;
 }
+.inputButton.memberCo{
+	border: 2px solid rgba(255,255,255,0.8);
+	color: #fff;
+}
+
+@media screen and (max-width: 640px){
+	.sidebars{
+		margin: 20px 0 35px;
+	}
+
+	.inputButton.tagSize{
+		height: 20px;
+		width: 60px;
+		display: inline-block;
+		margin: 0;
+	}
+}
+
 .inputButton:hover {
-	color: #000;
 	background: rgba(236,127,0,0.2);
 }
 .inputButton:active {
@@ -542,7 +597,7 @@ textarea {
 }
 .onclic:hover {
 	color: rgba(236,127,0,0.2);
-	background: white;
+	background: none;
 }
 
 .validate {
@@ -593,6 +648,31 @@ textarea {
 	padding-bottom: 35px;
 }
 
+.admin.gestArticle .bigformContent{
+	padding-bottom: 5px;
+}
+
+.admin.gestArticle .separForm::after{
+	display: block;
+	content: "";
+	width: 90%;
+	background-color: #ec7f00;
+	height: 5px;
+	margin: 25px auto;
+}
+
+@media screen and (max-width: 640px){
+	.admin{
+		width: 90%;
+		margin: 20px auto 0;
+	}
+
+	.admin h2{
+		padding-top: 10px;
+		text-align: center;
+	}
+}
+
 
 /* File Drop */
 
@@ -638,6 +718,35 @@ textarea {
 	outline: none;
 }
 
+@media screen and (max-width: 640px){
+	.file-drop-area{
+		width: 90%;
+		margin: auto;
+		border: none;
+		padding: 25px 2% 5px;
+		border: 1px dashed rgba(236,127,0,0.2);
+		border-radius: 3px;
+	}
+
+	.file-drop-area span{
+		display: block;
+	}
+
+	.file-msg{
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	.fake-btn{
+		margin-right: 0;
+	}
+
+	.file-input{
+		position: inherit;
+		height: auto;
+	}
+}
+
 
 /* Select Form */
 
@@ -652,7 +761,7 @@ textarea {
 		font-size: 1.2em;
 	}
 	header {
-		height: 100%;
+
 	}
 	.navbar .center  {
 		margin-left: 20%;
@@ -671,24 +780,20 @@ textarea {
 		padding-left: 0;
 		margin: 0;
 	}
-  .sidebars{
-  	width: 100%;
-  	margin: 0;
-  }
   .sidebar {
   	width: 90%;
-  	margin: 0;
+  	margin: 0 auto;
   }
   .articles {
   	width: 100%;
   	margin: 0;
   }
-  .article {
-  	width: 100%;
-  	margin: 0;
-  	padding: 0;
-  }
   .footer img {
   	width: 40%;
   }
+}
+
+.adminLink{
+	text-align: center;
+	margin-bottom: 25px;
 }

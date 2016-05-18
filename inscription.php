@@ -24,7 +24,7 @@
                         </div>
 
                         <div class="form-submit">
-                            <input class='btn' id="#btn1" type="submit" value="Inscription"></input>
+                            <input class='inputButton btn' type="submit" value="Inscription"/>
                      
                         </div>
                     </form>

@@ -52,23 +52,22 @@ $(document).ready(function() {
 
 
 	$(function() {
-		$( "#btn1" ).click(function() {
-			$( "#btn1" ).addClass( "onclic", 250, validate);
+		$( ".btn" ).click(function() {
+			$( ".btn" ).addClass( "onclic", 250, validate);
 		});
 
 		function validate() {
 			setTimeout(function() {
-				$( "#btn1" ).removeClass( "onclic" );
-				$( "#btn1" ).addClass( "validate", 450, callback );
+				$( ".btn" ).removeClass( "onclic" );
+				$( ".btn" ).addClass( "validate", 450, callback );
 			}, 2250 );
 		}
 		function callback() {
 			setTimeout(function() {
-				$( "#btn1" ).removeClass( "validate" );
+				$( ".btn" ).removeClass( "validate" );
 			}, 1250 );
 		}
 	});
-
 });
 
 
