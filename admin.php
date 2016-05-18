@@ -98,7 +98,7 @@
 
 						</div>
 						<input type="text" name="validation" value="0" hidden>
-						<input type="submit" name="suppression" value="<?php echo $ID; ?>" hidden>
+						<input name="suppression" value="<?php echo $ID; ?>" hidden>
 
 						
 						<input type="submit" type="input" value="publier">
