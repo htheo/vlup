@@ -15,7 +15,7 @@ foreach($reponse as $val){
 		 	if($val['password']==$password){
 		 	$id=$val['ID'];
 		 	$_SESSION['ID'] = $id;
-		 	$_SESSION['name'] = $pseudo;
+		 	$_SESSION['role'] = $val['role'];
 		 	$connecte = 1;
 		 	break;
 		 
