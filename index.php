@@ -40,6 +40,13 @@
 	</head>
 	<body onload="onload()">
 		<header>
+
+			<?php if (isset($_SESSION['pseudo'])){
+				echo "<div class='user-info'>Bonjour ".$_SESSION['pseudo']." !</div>";
+			}else{
+				echo "<div class='user-info'><a href='./azsdfvbgh.php'>Espace membre</a></div>";
+			} ?>
+
 			<div class="assombrir">
 				<h1>VLUP</h1>
 				<h2>Le Vinci du Leonard Universitaire</h2>
