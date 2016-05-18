@@ -24,8 +24,8 @@
                         </div>
 
                         <div class="form-submit">
-                            <input class='inputButton btn' id="#btn1" type="submit" value="Connection"/>
-                            <a href="inscription.php"><input class='inputButton btn' id="#btn2" value="Inscription"/></a>
+                            <input class='inputButton btn' type="submit" value="Connection"/>
+                            <a href="inscription.php"><input class='inputButton btn' type="button" value="Inscription"/></a>
                         </div>
                     </form>
         </div>
