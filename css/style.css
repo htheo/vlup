@@ -64,6 +64,27 @@ header h2 {
 	color: rgba(255,255,255,0.9);
 }
 
+header .user-info {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+header .user-info a:hover {
+	background-color: rgba(236,127,0,0.2);
+	border: 1px solid rgba(116,63,2,0.2);
+}
+
+header div a {
+	border: 1px solid black;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 7px;
+	padding: 15px 30px;
+	color: black;
+	font-weight: 700;
+}
+
 /*  position de base  */
 
 .assombrir {
