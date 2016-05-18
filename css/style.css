@@ -63,6 +63,13 @@ header .assombrir.headernav h1{
 	font-size: 2.5em;
 }
 
+@media screen and (max-width: 640px) {
+	header .assombrir.headernav h1{
+		width: 90%;
+		margin: auto;
+	}
+}
+
 header h2 {
 	margin:0;
 	padding-top: 5px;
@@ -420,6 +427,12 @@ footer {
 	border: 0;
 }
 
+@media screen and (max-width: 640px){
+	.admin.gestArticle .formContent img{
+		max-width: 100%;
+	}
+}
+
 button,
 input,
 select,
@@ -665,7 +678,7 @@ textarea {
 @media screen and (max-width: 640px){
 	.admin{
 		width: 90%;
-		margin: 20px auto 0;
+		padding: 20px auto 0;
 	}
 
 	.admin h2{
