@@ -70,19 +70,13 @@ header .user-info {
 	right: 30px;
 }
 
-header .user-info a:hover {
-	background-color: rgba(236,127,0,0.2);
-	border: 1px solid rgba(116,63,2,0.2);
-}
-
-header div a {
-	border: 1px solid black;
-	cursor: pointer;
-	background-color: white;
-	border-radius: 7px;
-	padding: 15px 30px;
-	color: black;
-	font-weight: 700;
+@media screen and (max-width: 640px){
+	header .user-info {
+		position: inherit;
+		margin: auto;
+		text-align: center;
+		margin: 20px 0 0;
+	}
 }
 
 /*  position de base  */
@@ -121,16 +115,11 @@ header div a {
 	text-align: center;
 	display: inline-block;
 	margin: 1%;
-	border: 1px solid rgba(0,0,0,0.2);
 	border-radius: 10%;
 	text-align: center;
-	padding: 1% 1.5% 1% 1.5%;
 	transition-duration:1s;
 }
-.sidebars li:hover {
-	background-color: rgba(236,127,0,0.2);
-	border: 1px solid rgba(116,63,2,0.2);
-}
+
 .articles {
 	width: 90%;
 	max-width: 1200px;
@@ -180,6 +169,12 @@ header div a {
 }
 
 @media screen and (max-width: 640px) {
+
+	.article{
+		width: 90%;
+		margin: auto;
+	}
+
 	.article::after{
 		margin: 25px auto;
 	}
@@ -280,6 +275,13 @@ header div a {
 	padding: 2%;
 }
 
+@media screen and (max-width: 640px) {
+	.single{
+		width: 90%;
+		margin: auto;
+	}
+}
+
 .article_single {
 	width: 30%;
 	display: inline-block;
@@ -292,6 +294,18 @@ header div a {
 
 .art3 {
 	text-align: center;
+}
+
+@media screen and (max-width: 640px){
+	.art3{
+		margin: 20px 0 0;
+	}
+
+	.article_single{
+		display: block;
+		width: 65%;
+		margin: auto;
+	}
 }
 
 /* page a propos  */
@@ -422,7 +436,7 @@ input[type='text'], input[type='password'] {
 	font-size: 12px;
 	color: #555;
 	border: 1px solid #aaa;
-	background-color: #fff;
+	/*background-color: #fff;*/
 }
 
 .largInput{
@@ -492,7 +506,6 @@ input[type='text'], input[type='password'] {
 		font-size: 10px;
 		color: #fff;
 		background: #ec7f00;
-		/*First push*/
 	}
 
 }
@@ -521,7 +534,7 @@ textarea {
 	text-align: center;
 	width: 130px;
 	border-radius: 40px;
-	background: #fff;
+	background: none;
 	border: 2px solid rgba(236,127,0,0.2);
 	color: #ec7f00;
 	letter-spacing: 1px;
@@ -533,8 +546,25 @@ textarea {
 	transition: all 0.25s ease;
 	margin: 0 5px;
 }
+.inputButton.memberCo{
+	border: 2px solid rgba(255,255,255,0.8);
+	color: #fff;
+}
+
+@media screen and (max-width: 640px){
+	.sidebars{
+		margin: 20px 0 35px;
+	}
+
+	.inputButton.tagSize{
+		height: 20px;
+		width: 60px;
+		display: inline-block;
+		margin: 0;
+	}
+}
+
 .inputButton:hover {
-	color: #000;
 	background: rgba(236,127,0,0.2);
 }
 .inputButton:active {
@@ -668,7 +698,7 @@ textarea {
 		font-size: 1.2em;
 	}
 	header {
-		height: 100%;
+
 	}
 	.navbar .center  {
 		margin-left: 20%;
@@ -687,22 +717,13 @@ textarea {
 		padding-left: 0;
 		margin: 0;
 	}
-  .sidebars{
-  	width: 100%;
-  	margin: 0;
-  }
   .sidebar {
   	width: 90%;
-  	margin: 0;
+  	margin: 0 auto;
   }
   .articles {
   	width: 100%;
   	margin: 0;
-  }
-  .article {
-  	width: 100%;
-  	margin: 0;
-  	padding: 0;
   }
   .footer img {
   	width: 40%;

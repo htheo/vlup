@@ -41,15 +41,15 @@
 	<body onload="onload()">
 		<header>
 
-			<?php if (isset($_SESSION['pseudo'])){
-				echo "<div class='user-info'>Bonjour ".$_SESSION['pseudo']." !</div>";
-			}else{
-				echo "<div class='user-info'><a href='./azsdfvbgh.php'>Espace membre</a></div>";
-			} ?>
-
 			<div class="assombrir">
 				<h1>VLUP</h1>
 				<h2>Le Vinci du Leonard Universitaire</h2>
+
+				<?php if (isset($_SESSION['pseudo'])){
+					echo "<div class='user-info'>Bonjour ".$_SESSION['pseudo']." !<br/><a href='./azsdfvbgh.php'><input class='inputButton memberCo' value='Ajouter un article'/></a></div>";
+				}else{
+					echo "<div class='user-info'><a href='./connection.php'><input class='inputButton memberCo' value='Espace membre'/></a></div>";
+				} ?>
 			</div>
 		</header>
 
@@ -57,17 +57,17 @@
 	    <div class="sidebars">
 		    <div class="sidebar">
 				<ul>
-					<li><a href="tag.php?type=Web">#Web</a></li>
-					<li><a href="tag.php?type=CV">#CV</a></li>
-					<li><a href="tag.php?type=CD">#CD</a></li>
-					<li><a href="tag.php?type=DI">#DI</a></li>
-					<li><a href="tag.php?type=3D">#3D</a></li>
-					<li><a href="tag.php?type=JV">#JV</a></li>
-					<li><a href="tag.php?type=BAP">#BAP</a></li>
-					<li><a href="tag.php?type=ESILV">#ESILV</a></li>
-					<li><a href="tag.php?type=PIX">#PIX</a></li>
-					<li><a href="tag.php?type=EMLV">#EMLV</a></li>
-					<li><a href="tag.php?type=Pole">#Pole</a></li>
+					<li><a href="tag.php?type=Web"><input class="inputButton tagSize" value="#Web"/></a></li>
+					<li><a href="tag.php?type=CV"><input class="inputButton tagSize" value="#CV"/></a></li>
+					<li><a href="tag.php?type=CD"><input class="inputButton tagSize" value="#CD"/></a></li>
+					<li><a href="tag.php?type=DI"><input class="inputButton tagSize" value="#DI"/></a></li>
+					<li><a href="tag.php?type=3D"><input class="inputButton tagSize" value="#3D"/></a></li>
+					<li><a href="tag.php?type=JV"><input class="inputButton tagSize" value="#JV"/></a></li>
+					<li><a href="tag.php?type=BAP"><input class="inputButton tagSize" value="#BAP"/></a></li>
+					<li><a href="tag.php?type=ESILV"><input class="inputButton tagSize" value="#ESILV"/></a></li>
+					<li><a href="tag.php?type=PIX"><input class="inputButton tagSize" value="#PIX"/></a></li>
+					<li><a href="tag.php?type=EMLV"><input class="inputButton tagSize" value="#EMLV"/></a></li>
+					<li><a href="tag.php?type=Pole"><input class="inputButton tagSize" value="#Pole"/></a></li>
 				</ul>
 			</div>
 		</div>
