@@ -61,7 +61,7 @@
 						<OPTION value="Pole">Pole</option>
 					</SELECT><br>
 				</div>
-				<input name="validation" value="0" hidden>
+				<!-- <input name="validation" value="0" hidden> -->
 				<div class="formContent">
 					<h3>La petite description</h3>
 					<textarea id="petiteDescription" type="text" placeholder="Enjoy :)" name="description"></textarea>
