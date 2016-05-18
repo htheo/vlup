@@ -56,24 +56,52 @@
 	    <div class="articles">
 	    	<h2>Les articles à valider cher admin</h2>
 		    <?php 
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE validation="1" ORDER BY "ID" DESC LIMIT 10');
+				$reponse = $db->query('SELECT ID, img_nom, title, type, description FROM vlup_articles2 WHERE validation="1" ORDER BY ID DESC LIMIT 10');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
+		 			$type=$result['type'];
 					?>
 					<form class="bigformContent" method="post" action="uploadimage.php" enctype="multipart/form-data">
-					
-						<input name="title" value="<?php echo $result['title']; ?>">
-						<img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?>">
+						<div class="formContent">
+							<h3>Le petit titre de type très drôle</h3>
+							<p class="formSubContent">
+								<label for="petitTitre">Fais toi plez</label>
+								<input class="largInput" type="text" value="<?php echo $result['title']; ?>" name="title" id="petitTitre" required >
+							</p><br>
+						</div>
+						<img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title']; ?>">
 						<div class="file-drop-area">
 							  <span class="fake-btn">Choose files</span>
 							  <span class="file-msg js-set-number">or drag and drop files here</span>
 							  <input class="file-input" type="file" id="avatar" name="avatar" multiple>
 					  	</div>
-						<input name="description" value="<?php echo $result['description']; ?>">
-						<input type="submit" name="validation" value="0" hidden>
+					  	<div class="select">
+							<SELECT name="type" size="1" required>
+								<OPTION value="<?php echo $type; ?>"><?php echo $type;  ?></option>
+								<OPTION value="Web">Web</option>
+								<OPTION value="CD">CD</option>
+								<OPTION value="CV">CV</option>
+								<OPTION value="DI">DI</option>
+								<OPTION value="3D">3D</option>
+								<OPTION value="JV">JV</option>
+								<OPTION value="BAP">BAP</option>
+								<OPTION value="ESILV">ESILV</option>
+								<OPTION value="PIX">PIX</option>
+								<OPTION value="EMLV">EMLV</option>
+
+								<OPTION value="Pole">Pole</option>
+							</SELECT><br>
+						</div>
+						<div class="formContent">
+							<h3>La petite description</h3>
+							<textarea id="petiteDescription" type="text"  name="description"><?php echo $result['description']; ?></textarea>
+
+						</div>
+						<input type="text" name="validation" value="0" hidden>
+						<input name="suppression" value="<?php echo $ID; ?>" hidden>
 
 						
-						<input type="input" value="publier">
+						<input type="submit" type="input" value="publier">
 					</form>
 					<form method="post" action="qsdflh.php">
 						<input name="id" value="<?php echo $ID; ?>" hidden>
