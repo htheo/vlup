@@ -1,11 +1,14 @@
-<?php include('config.php'); ?>
+<?php require('config.php'); ?>
 
 <?php
-	if (empty($_SESSION["role"])) {
+	if(!isset($_SESSION["role"])){
+
 		header("Location: erreur_acces.php");
-	}elseif($_SESSION['role']!=0){
-		header("Location: post.php")
 	}
+	if($_SESSION["role"]!=2){
+		header("Location: post.php");
+	}
+
 ?>
 
 <!-- -->
@@ -28,9 +31,9 @@
 			  <div class="formContent">
 				  <h3>La petite image de type drôle :</h3>
 				  <div class="file-drop-area">
-					  <span class="fake-btn">Choose files</span>
-					  <span class="file-msg js-set-number">or drag and drop files here</span>
-					  <input class="file-input" type="file" id="avatar" name="avatar" multiple>
+					  <span class="fake-btn">Choisir une image</span>
+					  <span class="file-msg js-set-number">drag and drop du .jpg ici</span>
+					  <input class="file-input" type="file" id="avatar"  accept=".jpg"  name="avatar" multiple>
 				  </div>
 			  </div>
 
@@ -60,15 +63,17 @@
 					</SELECT><br>
 				</div>
 				<input name="validation" value="1" hidden>
+				<!-- <input name="validation" value="0" hidden> -->
 				<div class="formContent">
 					<h3>La petite description</h3>
 					<textarea id="petiteDescription" type="text" placeholder="Enjoy :)" name="description"></textarea>
 
 				</div>
 					<div class="form-submit">
-						<button class='btn' id="#btn1" type="submit"></button>
+						<input class='inputButton btn' id="#btn1" type="submit" value="Ajout"/>
 					</div>
 				</form>
+				<a href="admin.php">Espace Admin</a>
 
 		</div>
 	</div>

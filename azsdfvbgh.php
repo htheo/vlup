@@ -8,6 +8,7 @@
 	if($_SESSION["role"]!=0){
 		header("Location: post.php");
 	}
+
 ?>
 
 <!-- -->
@@ -30,9 +31,9 @@
 			  <div class="formContent">
 				  <h3>La petite image de type drôle :</h3>
 				  <div class="file-drop-area">
-					  <span class="fake-btn">Choose files</span>
-					  <span class="file-msg js-set-number">or drag and drop files here</span>
-					  <input class="file-input" type="file" id="avatar" name="avatar" multiple>
+					  <span class="fake-btn">Choisir une image</span>
+					  <span class="file-msg js-set-number">drag and drop du .jpg ici</span>
+					  <input class="file-input" type="file" id="avatar" name="avatar" accept=".jpg" multiple>
 				  </div>
 			  </div>
 
@@ -61,6 +62,7 @@
 						<OPTION value="Pole">Pole</option>
 					</SELECT><br>
 				</div>
+				<input name="validation" value="0" hidden>
 				<!-- <input name="validation" value="0" hidden> -->
 				<div class="formContent">
 					<h3>La petite description</h3>
@@ -68,7 +70,7 @@
 
 				</div>
 					<div class="form-submit">
-						<input class='inputButton btn' id="#btn1" type="submit" value="Ajout"/>
+						<input class='inputButton btn' id="btn1" type="submit" value="Ajout"/>
 					</div>
 				</form>
 				<a href="admin.php">Espace Admin</a>

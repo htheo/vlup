@@ -92,7 +92,7 @@
 	    	<h2>Les derniers articles  #<?php echo $tag; ?></h2>
 		    <?php 
 		    	$i=0;
-				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE type="'.$tag.'" &&  validation="0"  LIMIT 10');
+				$reponse = $db->query('SELECT ID, img_nom, title, description FROM vlup_articles2 WHERE type="'.$tag.'" &&  validation="0"  ORDER BY ID DESC LIMIT 10');
 			    while($result = $reponse->fetch()) {
 		 			$ID=$result['ID'];
 					?>
