@@ -78,7 +78,7 @@
 		<h2>En voir plus...</h2>
 		<div class="art3">
 			<?php
-			$reponse = $db->query('SELECT ID, img_nom, title FROM vlup_articles2 WHERE ID!="'.$currentId.'" ORDER BY RAND() LIMIT 3');
+			$reponse = $db->query('SELECT ID, img_nom, title FROM vlup_articles2 WHERE ID!="'.$currentId.'" && validation="0" ORDER BY RAND() LIMIT 3');
 			while ($result = $reponse->fetch()) {
 				$ID = $result['ID'];
 				?>

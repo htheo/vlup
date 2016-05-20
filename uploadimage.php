@@ -7,15 +7,16 @@ include('config.php');
 		header("Location: erreur_acces.php");
 	}else{
 
-	if(empty(file_get_contents($_FILES['avatar']['tmp_name']))){
+	/*if(empty(file_get_contents($_FILES['avatar']['tmp_name']))){
 		header("Location: erreur_acces.php");
-	}
+	}*/
     $avatar = file_get_contents($_FILES['avatar']['tmp_name']);
 	$title		= htmlentities($_POST['title']);
 	$type	= htmlentities($_POST['type']);
 	$validation	= htmlentities($_POST['validation']);
 	$description	= htmlentities($_POST['description']);
 	$description = str_replace("\n","<br/>",$description);
+	echo $title;
 
 function move_avatar($avatar)
 
@@ -49,6 +50,6 @@ $req = $db->prepare("INSERT INTO vlup_articles2(title, validation, type, descrip
  }
  header("Location: index.php");
 	
-
 }
+
 ?>
