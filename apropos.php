@@ -2,6 +2,9 @@
 <html lang="fr">
 
 	<head>
+
+		<?php include('header.php') ?>
+
 		<title>VLUP</title>
 
 		<meta charset="UTF-8">
@@ -79,22 +82,8 @@
 	    
 
 
-		<footer>
-			<div class="assombrir pad">
-				<div class="footer">
-					<a href="apropos.php">A propos de nous</a>
-				</div>
-				<div class="footer">
-					<a href="https://www.facebook.com/vlupdevinci/" target="_blank"><img src="images/facebook.png"></a>
-				</div>
-			</div>
-	
-		
-		</footer>
-	
+		<?php include('footer.php') ?>
 
-<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 
 </html>

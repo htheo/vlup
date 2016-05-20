@@ -46,9 +46,12 @@
 			<div class="assombrir">
 				<h1>VLUP</h1>
 				<h2>Le Vinci du Leonard Universitaire</h2>
+				<?php if (isset($_SESSION['user'])){
+					echo "<h2>Bonjour ".$_SESSION['user']." !</h2>";
+				}; ?>
 
-				<?php if (isset($_SESSION['pseudo'])){
-					echo "<div class='user-info'>Bonjour ".$_SESSION['pseudo']." !<br/><a href='./azsdfvbgh.php'><input class='inputButton memberCo' value='Ajouter un article'/></a></div>";
+				<?php if (isset($_SESSION['role'])){
+					echo "<div class='user-info'><a href='./azsdfvbgh.php'><input type='button' class='inputButton memberCo btn' value='Ajouter un article'/></a></div>";
 				}else{
 					echo "<div class='user-info'><a href='./connection.php'><input type='button' class='inputButton memberCo btn' value='Espace membre'/></a></div>";
 				} ?>
