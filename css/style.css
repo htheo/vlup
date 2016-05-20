@@ -183,7 +183,7 @@ header .user-info p {
 .article img{
 	height: 400px;
 	object-fit: cover;
-	object-position: top;
+	object-position: center;
 }
 
 .article::after{
@@ -444,6 +444,10 @@ footer {
 .formContent {
 	padding: 20px 0;
 	margin-bottom: 20px;
+}
+
+.admin.gestArticle .formContent img{
+	max-width: 100%;
 }
 
 .formContent:nth-child(odd) {

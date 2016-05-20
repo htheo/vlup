@@ -73,7 +73,6 @@
 						<input class='inputButton' type="submit" value="Ajout"/>
 					</div>
 				</form>
-				<a href="admin.php">Espace Admin</a>
 
 		</div>
 	</div>
