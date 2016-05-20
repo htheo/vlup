@@ -168,6 +168,7 @@ header .user-info {
 	margin-left:auto;
 	text-align: left;
 	width: 80%;
+	text-align: justify;
 
 	margin-bottom: 5%;
 }
@@ -513,7 +514,7 @@ input[type='text'], input[type='password'] {
 	background: #ec7f00;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 415px) {
 	.formContent{
 		padding-bottom: 0px;
 	}
@@ -588,6 +589,10 @@ textarea {
 @media screen and (max-width: 640px){
 	.sidebars{
 		margin: 20px 0 35px;
+	}
+
+	.inputButton{
+		margin-bottom: 5px;
 	}
 
 	.inputButton.tagSize{
