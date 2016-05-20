@@ -14,7 +14,7 @@ foreach($reponse as $val){
 		 if ($val['pseudo']==$pseudo){
 		 	if($val['password']==$password){
 		 	$id=$val['ID'];
-		 	
+		 	$user = $val['pseudo'];
 		 	$role=$val['role'];
 		 	$connecte=1;
 		 
@@ -32,7 +32,7 @@ foreach($reponse as $val){
 		 
 
 if ($connecte ==1){
-
+			$_SESSION["user"] = $user;
 		 	$_SESSION["role"] = $role;
 		 	header("Location: azsdfvbgh.php");
 }else{

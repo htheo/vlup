@@ -82,6 +82,12 @@ header .user-info {
 	right: 30px;
 }
 
+header .user-info p {
+	margin: 5px;
+	color: white;
+	font-weight: 700;
+}
+
 @media screen and (max-width: 640px){
 	header .user-info {
 		position: inherit;
