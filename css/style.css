@@ -689,7 +689,8 @@ textarea {
 @media screen and (max-width: 640px){
 	.admin{
 		width: 90%;
-		padding: 20px auto 0;
+		padding: 20px 0;
+		margin: auto;
 	}
 
 	.admin h2{
@@ -748,9 +749,10 @@ textarea {
 		width: 90%;
 		margin: auto;
 		border: none;
-		padding: 25px 2% 5px;
+		padding: 25px 2%;
 		border: 1px dashed rgba(236,127,0,0.2);
 		border-radius: 3px;
+		position: relative;
 	}
 
 	.file-drop-area span{
@@ -758,8 +760,8 @@ textarea {
 	}
 
 	.file-msg{
-		text-align: center;
-		padding-top: 5px;
+		display: none !important;
+		visibility: hidden !important;
 	}
 
 	.fake-btn{
@@ -767,8 +769,10 @@ textarea {
 	}
 
 	.file-input{
-		position: inherit;
-		height: auto;
+		position: absolute;
+		top: 0; left: 0;
+		height: 100%;
+		width: 100%;
 	}
 }
 
