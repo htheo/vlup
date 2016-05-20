@@ -172,6 +172,14 @@ header .user-info {
 
 	margin-bottom: 5%;
 }
+
+
+.article img{
+	height: 300px;
+	object-fit: cover;
+	object-position: top;
+}
+
 .article::after{
 	content: "";
 	width: 20%;
