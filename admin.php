@@ -31,7 +31,7 @@
 		    <?php 
 				$reponse = $db->query('SELECT ID, img_nom, title, type, description FROM vlup_articles2 WHERE validation="1" ORDER BY ID DESC LIMIT 10');
 			    while($result = $reponse->fetch()) {
-		 			$ID=$result['ID'];
+		 			$id=$result['ID'];
 		 			$type=$result['type'];
 					?>
 					<div class="separForm">
@@ -72,11 +72,11 @@
 								<textarea id="petiteDescription" type="text"  name="description"><?php echo $result['description']; ?></textarea>
 							</div>
 							<input type="text" name="validation" value="0" hidden>
-							<input name="suppression" value="<?php echo $ID; ?>" hidden>
+							<input name="suppression" value="<?php echo $id; ?>" hidden>
 							<input type="submit" class="inputButton" value="Publier">
 						</form>
 						<form method="post" action="qsdflh.php">
-							<input name="id" value="<?php echo $ID; ?>" hidden>
+							<input type="number" name="id" value="<?php echo $id; ?>" hidden>
 							<input type="submit" class="inputButton" value="Supprimer">
 						</form>
 					</div>

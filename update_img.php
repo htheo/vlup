@@ -7,9 +7,7 @@ include('config.php');
 		header("Location: erreur_acces.php");
 	}else{
 
-	if(empty(file_get_contents($_FILES['avatar']['tmp_name']))){
-		header("Location: erreur_acces.php");
-	}
+	
 	$title		= htmlentities($_POST['title']);
 	$id		= htmlentities($_POST['suppression']);
 	$type	= htmlentities($_POST['type']);

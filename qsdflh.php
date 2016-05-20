@@ -7,22 +7,21 @@ include('config.php');
 		header("Location: erreur_acces.php");
 	}else{
 
-	
 	$validation	= 2;
-	$id=$_POST('id');
+	$id=$_POST('ID');
+
+/*
+
+	$sql = 'UPDATE vlup_articles2 
+	SET validation= "'.$validation.'"
+
+	WHERE ID="'.$id.'"';
+	$db->exec($sql);
 
 
+	header("Location: admin.php");
 
-$sql = 'UPDATE vlup_articles2 
-SET validation= "'.$validation.'"
-
-WHERE ID="'.$id.'"';
-$db->exec($sql);
-
-
-header("Location: admin.php");
-
-	
+	*/
 
 }
 ?>
