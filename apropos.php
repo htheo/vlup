@@ -61,20 +61,20 @@
 		</header>
 
 		<div class="propos">
-			<h3>Pourquoi le VLUP ?</h3>
-			<p>Le VLUP est tout d'abord du troll, définition ici -> <a href="troll.php">coucou je suis le troll</a> <- 
-				<br><br>Tout ce qui se situe sur cette page n'est pas à prendre au sérieux, 
-				<br><br>
+			<h3><span>Pourquoi le VLUP ?</span></h3><br><br>
+			<p>Le VLUP est tout d'abord du troll, définition ici -> <span><a href="troll.php">coucou je suis le troll</a></span> <- 
+				Tout ce qui se situe sur cette page n'est pas à prendre au sérieux, 
+				
 				Si vous trouvez certains articles trop offensant pour l'image de votre axe ou de l'école contacter nous sur facebook nous sommes ouvert aux débats.</p>
 
-			<h3>Pour qui le VLUP ?</h3>
+			<br><br><h3><span>Pour qui le VLUP ?</span></h3><br><br>
 			<p>Le VLUP est une sorte de Gorafi, donc tout amateur de troll est accepté sur ce site.</p>
 
-			<h3>Qui est à l'origine du VLUP ?</h3>
+			<br><br><h3><span>Qui est à l'origine du VLUP ?</span></h3><br><br>
 			<p>Une idée pas terrible développée par Alex Landeau et Théo Hinfray, 2 A2 de l'axe web assez mauvais. Destiné à faire rire, si jamais tu trouves ça offensant ou pas tu peux aller les voir ! 
-				<br><br> Sinon pour la création d'articles pour l'instant il y a aussi Mathieu Rella et Matthieu Lalbat deux autres webs qui font du mauvais contenu.
+				Sinon pour la création d'articles pour l'instant il y a aussi Mathieu Rella et Matthieu Lalbat deux autres webs qui font du mauvais contenu.
 
-				<br><br> Si jamais vous voulez rejoindre la team contacter nous sur facebook c'est avec plaisir !</p>
+				Si jamais vous voulez rejoindre la team contacter nous sur facebook c'est avec plaisir !</p>
 		</div>
 	    
 

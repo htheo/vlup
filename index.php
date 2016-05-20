@@ -85,7 +85,7 @@
 						<h3><?php echo $result['title']; ?></h3>
 						<a href="single.php?ID=<?php echo $ID; ?>"><img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title'] ?>"></a>
 						<p><?php $description = $result['description'];
-						echo  substr($description , 0 , 100  )."..."; ?></p>
+						echo  substr($description , 0 , 250  )."..."; ?></p>
 					</div>
 					<?php
 				}

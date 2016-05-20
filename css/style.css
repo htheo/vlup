@@ -63,6 +63,13 @@ header .assombrir.headernav h1{
 	font-size: 2.5em;
 }
 
+@media screen and (max-width: 640px) {
+	header .assombrir.headernav h1{
+		width: 90%;
+		margin: auto;
+	}
+}
+
 header h2 {
 	margin:0;
 	padding-top: 5px;
@@ -199,7 +206,12 @@ header .user-info {
 .article p{
 	margin: 10px 0;
 }
-
+.article_single {
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1%;
+}
 
 /*/                single article */
 
@@ -251,8 +263,11 @@ header .user-info {
 	margin: 0;
 }
 
-.single h1, .single p{
-	padding: 2%;
+.single h1{
+	padding: 20% 2% 2% 2%;
+}
+.single p{
+	padding: 5% 2% 2% 2%;
 }
 
 .single p{
@@ -273,7 +288,10 @@ header .user-info {
 	background-color: rgba(236, 127, 0, 0.5);
 	display: block;
 }
+.propos {
 
+	padding: 5% 25% 5% 25%;
+}
 .single_plus {
 	background-color: rgba(0,0,0,0.9);
 	color: white;
@@ -316,7 +334,7 @@ header .user-info {
 /* page a propos  */
 .propos {
 
-	padding: 1% 20% 1% 10%;
+	padding: 15% 10% 15% 10%;
 }
 
 /*   page erreur   */
@@ -671,7 +689,8 @@ textarea {
 @media screen and (max-width: 640px){
 	.admin{
 		width: 90%;
-		margin: 20px auto 0;
+		padding: 20px 0;
+		margin: auto;
 	}
 
 	.admin h2{
@@ -730,9 +749,10 @@ textarea {
 		width: 90%;
 		margin: auto;
 		border: none;
-		padding: 25px 2% 5px;
+		padding: 25px 2%;
 		border: 1px dashed rgba(236,127,0,0.2);
 		border-radius: 3px;
+		position: relative;
 	}
 
 	.file-drop-area span{
@@ -740,8 +760,8 @@ textarea {
 	}
 
 	.file-msg{
-		text-align: center;
-		padding-top: 5px;
+		display: none !important;
+		visibility: hidden !important;
 	}
 
 	.fake-btn{
@@ -749,8 +769,10 @@ textarea {
 	}
 
 	.file-input{
-		position: inherit;
-		height: auto;
+		position: absolute;
+		top: 0; left: 0;
+		height: 100%;
+		width: 100%;
 	}
 }
 
@@ -770,11 +792,15 @@ textarea {
 	header {
 
 	}
+	.article_single {
+		margin-bottom: 5%;
+	}
 	.navbar .center  {
 		margin-left: 20%;
 	}
 	.single h1 {
-		padding-top: 15%;
+		font-size: 1em;
+		padding-top: 25%;
 		padding-left: 5%;
 	}
 	.single p {

@@ -22,6 +22,10 @@
 ?>
 	<body onload="onload()">
 
+	<div class="navbar">
+		<a href="index.php"><img src="images/arrow_orange.png" alt="retour bureau"></a>
+	</div>
+
 	    <div class="admin gestArticle">
 	    	<h1>Les articles à valider cher admin</h1>
 		    <?php 
@@ -31,7 +35,7 @@
 		 			$type=$result['type'];
 					?>
 					<div class="separForm">
-						<form class="bigformContent" method="post" action="uploadimage.php" enctype="multipart/form-data">
+						<form class="bigformContent" method="post" action="update_img.php" enctype="multipart/form-data">
 							<div class="formContent">
 								<h3>Le petit titre de type très drôle</h3>
 								<p class="formSubContent">
@@ -43,11 +47,7 @@
 							<div class="formContent">
 								<h3>La petite image de type drôle :</h3>
 								<img src="avatars/<?php echo $result['img_nom'] ?>" alt="<?php echo $result['title']; ?>">
-								<div class="file-drop-area">
-									<span class="fake-btn">Choose files</span>
-									<span class="file-msg js-set-number">or drag and drop files here</span>
-									<input class="file-input" type="file" id="avatar" name="avatar" multiple>
-								</div>
+								
 							</div>
 							<h3>C'est quoi le Hashtag ?</h3>
 							<div class="select">

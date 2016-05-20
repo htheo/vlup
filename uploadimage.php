@@ -44,14 +44,8 @@ $req = $db->prepare("INSERT INTO vlup_articles2(title, validation, type, descrip
 					'img_nom' => $nomavatar
 					));
 
- if(!empty($_POST['suppression'])){
- 	$id	= htmlentities($_POST['suppression']);
-	echo $id;
-
-	$sql = 'DELETE FROM vlup_articles2 WHERE ID="'.$id.'"';
-	$db->exec($sql);
-	header("Location: index.php");
-
+ if($validation==1){
+ 	header("Location: merci.php");
  }
  header("Location: index.php");
 	

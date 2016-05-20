@@ -1,27 +1,30 @@
-<?php require('config.php'); ?>
-
 <?php
+
+//Copie de l'avatar dans le dossier image
+include('config.php');
 	if(!isset($_SESSION["role"])){
 
 		header("Location: erreur_acces.php");
+	}else{
+
+	if(empty(file_get_contents($_FILES['avatar']['tmp_name']))){
+		header("Location: erreur_acces.php");
 	}
-	if($_SESSION["role"]!=0){
-		header("Location: post.php");
-	}
-if(isset($_POST['id'])){
+	$validation	= 2;
+	$id=$_POST('id');
 
 
-$id	= htmlentities($_POST['id']);
-echo $id;
 
-$sql = 'DELETE FROM vlup_articles2 WHERE ID="'.$id.'"';
+$sql = 'UPDATE vlup_articles2 
+SET validation= "'.$validation.'"
+
+WHERE ID="'.$id.'"';
 $db->exec($sql);
 
 
- 
-	header("Location: admin.php");
+header("Location: admin.php");
 
-}else{
-	header("Location: admin.php");
+	
+
 }
 ?>
