@@ -51,7 +51,7 @@
 				}; ?>
 
 				<?php if (isset($_SESSION['role'])){
-					echo "<div class='user-info'><br/><a href='./azsdfvbgh.php'><input class='inputButton memberCo' value='Ajouter un article'/></a></div>";
+					echo "<div class='user-info'><a href='./azsdfvbgh.php'><input type='button' class='inputButton memberCo btn' value='Ajouter un article'/></a></div>";
 				}else{
 					echo "<div class='user-info'><a href='./connection.php'><input type='button' class='inputButton memberCo btn' value='Espace membre'/></a></div>";
 				} ?>
