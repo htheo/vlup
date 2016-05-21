@@ -184,6 +184,7 @@ header .user-info p {
 	height: 500px;
 	object-fit: cover;
 	object-position: center;
+
 }
 .formContent img {
 	height: 500px;
@@ -455,6 +456,10 @@ footer {
 .formContent {
 	padding: 20px 0;
 	margin-bottom: 20px;
+}
+
+.admin.gestArticle .formContent img{
+	max-width: 100%;
 }
 
 .formContent:nth-child(odd) {
