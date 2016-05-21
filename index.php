@@ -7,8 +7,7 @@
         include('config.php'); ?>
 
 
-		<link rel="icon" type="image/png" href="images/vlup.jpg" />
-		<meta name="DC.title" content="VLUP - le Vinci de Leonard">
+		<meta name="DC.title" content="VLUP - le Vinci du Leonard universitaire">
 		<meta name="DC.creator" content="Theo Hinfray">
 		<meta name="DC.subject" content="Blog troll sur l'IIM" />
 		<meta name="DC.description" content="Retrouver le blog troll de l'IIM, tous les axes s'y retrouvent Web, CV, CD, 3D, JV...." />
@@ -34,7 +33,7 @@
 		<meta property="og:title" content="VLUP, le blog troll de l'IIM pour tous les axes">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="www.vlup.fr">
-		<meta property="og:image" content="images/bannier.jpg">
+		<meta property="og:image" content="images/3.gif">
 		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
 		<meta property="og:description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
 

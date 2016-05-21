@@ -181,9 +181,19 @@ header .user-info p {
 
 
 .article img{
-	height: 400px;
+	height: 500px;
 	object-fit: cover;
-	object-position: top;
+	object-position: center;
+}
+.formContent img {
+	height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+.art3 img {
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .article::after{
@@ -306,7 +316,7 @@ header .user-info p {
 }
 .propos {
 
-	padding: 5% 25% 5% 25%;
+	padding: 5% 15% 5% 15%;
 }
 .single_plus {
 	background-color: rgba(0,0,0,0.9);
@@ -350,7 +360,7 @@ header .user-info p {
 /* page a propos  */
 .propos {
 
-	padding: 15% 10% 15% 10%;
+	padding: 5% 25% 5% 20%;
 }
 
 /*   page erreur   */
@@ -362,10 +372,11 @@ header .user-info p {
 }
 .erreur .content {
 	position: absolute;
-	border: 2px solid #F6BF80;
+	border: 2px solid rgba(235,234,209,0.8);
 	border-radius: 5px;
 	padding: 30px;
-	background-color: #FFEAD1;
+	background-color: rgba(235,234,209,0.5);
+	max-width: 25%;
 	top: 42%;
 	left: 40%;
 
@@ -600,7 +611,33 @@ textarea {
 	border: 2px solid rgba(255,255,255,0.8);
 	color: #fff;
 }
-
+.btn2 {
+	outline: none;
+	height: 40px;
+	text-align: center;
+	width: 130px;
+	border-radius: 40px;
+	background: none;
+	border: 2px solid rgba(236,127,0,0.2);
+	color: #ec7f00;
+	letter-spacing: 1px;
+	text-shadow: 0;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	padding: 2%;
+}
+.btn2:hover {
+	background: rgba(236,127,0,0.2);
+}
+.btn2:active {
+	letter-spacing: 2px;
+}
+.btn2:after {
+	content: "";
+}
 @media screen and (max-width: 640px){
 	.sidebars{
 		margin: 20px 0 35px;

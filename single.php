@@ -16,7 +16,9 @@
 
 
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);
-
+			if(empty($result)){
+				header("Location: erreur_action.php");
+			}
 
 			foreach($result as $val){
 	?>
@@ -49,7 +51,7 @@
 
 		<!-- Open Graph-->
 		<meta property="og:title" content="<?php echo $val['title']; ?>">
-		<meta property="og:image" content="http://www.vulp.fr/images/<?php echo $val['img_nom']; ?>">
+		<meta property="og:image" content="http://www.theo-hinfray.fr/IIM/VLUP2/avatars/<?php echo $val['img_nom']; ?>">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="www.vlup.fr">
 		<meta property="og:site_name" content="VLUP - <?php echo $val['title']; ?>">
@@ -67,10 +69,18 @@
 	<div class="singles">
 
 		<div class="single">
-			<?php $currentId=$val['ID']; ?>
+			<?php $currentId=$val['ID'];
+			?>
+
 			<h1><?php echo $val['title']; ?></h1>
-			<img src="avatars/<?php echo $val['img_nom']; ?>" alt="<?php echo $val['title']; ?> par Théo Hinfray">
+			<img src="avatars/<?php echo $val['img_nom']; ?>" alt="<?php echo $val['title']; ?>">
 			<p><?php echo $val['description']; ?> <br><br></p>
+			<a class='btn2' href="https://www.facebook.com/sharer/sharer.php?u=www.theo-hinfray.fr/IIM/VLUP2/single.php?ID=<?php echo $currentId; ?>" target="_blank">partager cet article !</a>
+				
+			<br><br><br><br>
+			<?php
+				
+			?>
 		</div>
 	</div>
 
@@ -83,10 +93,10 @@
 				$ID = $result['ID'];
 				?>
 				<div class="article_single">
-					<a href="single.php?ID=<?php echo $ID; ?>"><img src="avatars/<?php echo $result['img_nom'] ?>"
-																	alt="<?php echo $result['title'] ?> par Théo Hinfray"></a>
+					 <a href="single.php?ID=<?php echo $ID; ?>"><img src="avatars/<?php echo $result['img_nom'] ?>"
+																	alt="<?php echo $result['title'] ?>"></a>
 					<h3><?php echo $result['title']; ?></h3>
-				</div>
+					</div>
 				<?php
 			}
 

@@ -17,10 +17,10 @@
 		<meta name="viewport" content="width=device-width" />
 
 		<link rel="icon" type="image/png" href="images/vlup.jpg" />
-		<meta name="DC.title" content="VLUP - le Vinci de Leonard">
+		<meta name="DC.title" content="VLUP - A savoir">
 		<meta name="DC.creator" content="Theo Hinfray">
 		<meta name="DC.subject" content="Blog troll sur l'IIM" />
-		<meta name="DC.description" content="Retrouver le blog troll de l'IIM, tous les axes s'y retrouvent Web, CV, CD, 3D, JV...." />
+		<meta name="DC.description" content="Retrouver l'équipe de VLUP et essayer de la rejoindre'" />
 		<meta name="DC.publisher" content="Theo Hinfray">
 		<meta name="DC.format" content="website">
 		<meta name="DC.identifier" content="www.theo-hinfray.fr">
@@ -31,8 +31,8 @@
 
 
 		<!-- Referencement -->
-		<meta name="description" content="Retrouver le blog troll de l'IIM, tous les axes s'y retrouvent Web, CV, CD, 3D, JV....">
-		<meta name="keywords" content="VLUP, PULV, troll IIM, troll axe web, article IIM, Gorafi, Pole Leonard de Vinci, troll, blog IIM">
+		<meta name="description" content="L'équipe du VLUP et ses motivations, essayez de rejoindre le blog troll de l'IIM">
+		<meta name="keywords" content="VLUP, PULV, troll IIM, rejoindre, admin, qui, Pole Leonard de Vinci, pourquoi, blog IIM">
 		<meta name="author" content="Theo Hinfray">
 		<meta name="robots" content="index"> 
 		<meta name="Indentifier-URL" content="www.theo-hinfray.fr">
@@ -45,7 +45,7 @@
 		<meta property="og:url" content="www.vlup.fr">
 		<meta property="og:image" content="images/bannier.jpg">
 		<meta property="og:site_name" content="VLUP - le Vinci de Leonard Universitaire au Pole">
-		<meta property="og:description" content="Retrouvez les réalisations graphique de Théo Hinfray etudiant à l'IIM">
+		<meta property="og:description" content="L'équipe du VLUP et ses motivations, essayez de rejoindre le blog troll de l'IIM">
 		<script type="text/javascript" src="js/script.js"></script>
 		<!-- END Open Graph-->
 	</head>

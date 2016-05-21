@@ -22,7 +22,7 @@
 		<meta name="viewport" content="width=device-width" />
 
 		<link rel="icon" type="image/png" href="images/vlup.jpg" />
-		<meta name="DC.title" content="VLUP les articles de l'IIM avec le tag <?php echo $tag; ?>">
+		<meta name="DC.title" content="VLUP les articles #<?php echo $tag; ?>">
 		<meta name="DC.creator" content="Theo Hinfray">
 		<meta name="DC.subject" content="Blog troll sur l'IIM" />
 		<meta name="DC.description" content="Retrouver le blog troll de l'IIM, tous les axes, mais la on parle du #<?php echo $tag; ?>" />

@@ -47,8 +47,10 @@ $req = $db->prepare("INSERT INTO vlup_articles2(title, validation, type, descrip
 
  if($validation==1){
  	header("Location: merci.php");
+ }else{
+ 	header("Location: index.php");
  }
- header("Location: index.php");
+ 
 	
 }
 

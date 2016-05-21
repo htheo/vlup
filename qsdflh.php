@@ -8,9 +8,9 @@ include('config.php');
 	}else{
 
 	$validation	= 2;
-	$id=$_POST('ID');
+	$id=htmlentities($_POST['id']);
 
-/*
+
 
 	$sql = 'UPDATE vlup_articles2 
 	SET validation= "'.$validation.'"
@@ -21,7 +21,7 @@ include('config.php');
 
 	header("Location: admin.php");
 
-	*/
+	
 
 }
 ?>
