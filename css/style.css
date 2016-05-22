@@ -373,13 +373,12 @@ header .user-info p {
 }
 .erreur .content {
 	position: absolute;
-	border: 2px solid rgba(235,234,209,0.8);
 	border-radius: 5px;
 	padding: 30px;
 	background-color: rgba(235,234,209,0.5);
-	max-width: 25%;
+	width: 30%;
 	top: 42%;
-	left: 40%;
+	left: 50%;
 
 }
 

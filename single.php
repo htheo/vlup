@@ -51,7 +51,7 @@
 
 		<!-- Open Graph-->
 		<meta property="og:title" content="<?php echo $val['title']; ?>">
-		<meta property="og:image" content="http://www.theo-hinfray.fr/IIM/VLUP2/avatars/<?php echo $val['img_nom']; ?>">
+		<meta property="og:image" content="http://theo-hinfray.fr/IIM/VLUP2/avatars/<?php echo $val['img_nom']; ?>">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="www.vlup.fr">
 		<meta property="og:site_name" content="VLUP - <?php echo $val['title']; ?>">
